@@ -54,19 +54,8 @@ async def create_blog(request: Request):
         # Validate input using Pydantic model
         new_post_data = BlogPostCreate(**data)
 
-        # Create full BlogPost with timestamps
-        new_post = BlogPost(
-            slug=new_post_data.slug,
-            title=new_post_data.title,
-            content=new_post_data.content,
-            excerpt=new_post_data.excerpt,
-            date=new_post_data.date,
-            readTime=new_post_data.readTime,
-            tags=new_post_data.tags,
-            difficulty=new_post_data.difficulty,
-            author=new_post_data.author,
-            published=new_post_data.published
-        )
+        # Create full BlogPost with ALL fields from validated data
+        new_post = BlogPost(**new_post_data.model_dump())
 
         created = create_post(new_post)
         return BlogResponse(success=True, data=created.model_dump())
