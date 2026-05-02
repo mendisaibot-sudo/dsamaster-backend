@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - ALLOWED_ORIGINS=http://localhost:5173,https://dsamaster.de
+      - EXECUTOR_IMAGE=dsamaster-executor:latest
+      - EXECUTOR_TIMEOUT=10
+      - EXECUTOR_MEMORY=128m
+      - EXECUTOR_CPU=1.0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /tmp:/tmp
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    networks:
+      - dsa-network
+
+  executor:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: dsamaster-executor:latest
+    command: "echo 'executor image built'"
+    networks:
+      - dsa-network
+
+networks:
+  dsa-network:
+    driver: bridge
