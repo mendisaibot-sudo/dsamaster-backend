@@ -113,9 +113,12 @@ def run_in_container(code, language):
             return {
                 "output": result.stdout if result.returncode == 0 else None,
                 "error": result.stderr if result.returncode != 0 else None,
-                "exitCode": result.returncode
+                "exitCode": result.returncode,
+                "timed_out": False,
+                "parse_error": result.returncode != 0,
+                "result": None
             }
     except subprocess.TimeoutExpired:
-        return {"error": "Execution timeout (10s)", "output": None, "exitCode": -1}
+        return {"error": "Execution timeout (10s)", "output": None, "exitCode": -1, "timed_out": True, "parse_error": False, "result": None}
     except Exception as e:
-        return {"error": str(e), "output": None, "exitCode": -1}
+        return {"error": str(e), "output": None, "exitCode": -1, "timed_out": False, "parse_error": True, "result": None}
