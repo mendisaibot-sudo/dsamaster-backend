@@ -2,6 +2,7 @@
 DSAMaster Code Execution API - FastAPI Backend
 
 Sandboxed code execution for Python, Java, C++
+Plus Blog Admin API
 """
 
 import json
@@ -15,6 +16,9 @@ from pydantic import BaseModel
 
 from .executor import execute_in_sandbox, sanitize_code
 
+# Import new routers
+from .routers import auth, blog
+
 # Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dsamaster-api")
@@ -22,18 +26,23 @@ logger = logging.getLogger("dsamaster-api")
 # FastAPI app
 app = FastAPI(
     title="DSAMaster Code Execution API",
-    description="Docker-sandboxed execution for coding challenges",
-    version="1.0.0"
+    description="Docker-sandboxed execution for coding challenges + Blog Admin API",
+    version="1.1.0"
 )
 
-# CORS
+# CORS - updated to support Authorization header and explicit origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=os.getenv("ALLOWED_ORIGINS", "*").split(","),
+    allow_origins=os.getenv("ALLOWED_ORIGINS", "https://dsamaster.de,http://localhost:5173").split(","),
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
+    expose_headers=["*"]
 )
+
+# Include blog and auth routers
+app.include_router(auth.router)
+app.include_router(blog.router)
 
 # ---------------------------------------------------------------------------
 # Request / Response models
@@ -77,7 +86,7 @@ async def health():
     return {
         "status": "ok",
         "timestamp": __import__("datetime").datetime.utcnow().isoformat(),
-        "version": "1.0.0"
+        "version": "1.1.0"
     }
 
 

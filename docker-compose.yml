@@ -14,9 +14,13 @@ services:
       - EXECUTOR_TIMEOUT=10
       - EXECUTOR_MEMORY=128m
       - EXECUTOR_CPU=1.0
+      - BLOG_ADMIN_USERNAME=admin
+      - BLOG_ADMIN_PASSWORD=${BLOG_ADMIN_PASSWORD:-admin123}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-not-for-production}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /tmp:/tmp
+      - ./data:/app/data
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
