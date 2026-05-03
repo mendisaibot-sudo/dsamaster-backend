@@ -99,7 +99,6 @@ def run_in_container(code, language):
                 "--network", "none",
                 "--memory", "128m",
                 "--cpus", "1.0",
-                "--timeout", "10",
                 "dsamaster-executor:latest"
             ] + cmd
             
