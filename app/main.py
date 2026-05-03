@@ -114,8 +114,8 @@ async def run_code(request: RunRequest):
         execution = await execute_in_sandbox(
             request.code,
             request.language,
-            request.function_name,
-            test_case.input
+            test_case.input,
+            request.function_name
         )
 
         passed = (
