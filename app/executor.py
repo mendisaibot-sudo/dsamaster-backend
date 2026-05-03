@@ -92,10 +92,14 @@ def run_in_container(code, language):
             with open(filepath, 'w') as f:
                 f.write(code)
             
+            # Make file and directory readable by all (fix permission denied in spawned container)
+            os.chmod(filepath, 0o666)
+            os.chmod(tmpdir, 0o777)
+            
             # Run in Docker container
             docker_cmd = [
                 "docker", "run", "--rm",
-                "-v", f"{tmpdir}:/sandbox",
+                "-v", f"{tmpdir}:/sandbox:z",
                 "--network", "none",
                 "--memory", "128m",
                 "--cpus", "1.0",
