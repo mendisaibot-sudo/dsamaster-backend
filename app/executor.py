@@ -103,12 +103,22 @@ def run_in_container(code, language):
                 "dsamaster-executor:latest"
             ] + cmd
             
+            start_time = time.time()
             result = subprocess.run(
                 docker_cmd,
                 capture_output=True,
                 text=True,
                 timeout=15
             )
+            execution_time_ms = int((time.time() - start_time) * 1000)
+            
+            # Try to parse the result from stdout
+            parsed_result = None
+            if result.returncode == 0 and result.stdout:
+                try:
+                    parsed_result = json.loads(result.stdout.strip())
+                except (json.JSONDecodeError, ValueError):
+                    pass
             
             return {
                 "output": result.stdout if result.returncode == 0 else None,
@@ -116,9 +126,10 @@ def run_in_container(code, language):
                 "exitCode": result.returncode,
                 "timed_out": False,
                 "parse_error": result.returncode != 0,
-                "result": None
+                "result": parsed_result,
+                "execution_time_ms": execution_time_ms
             }
     except subprocess.TimeoutExpired:
-        return {"error": "Execution timeout (10s)", "output": None, "exitCode": -1, "timed_out": True, "parse_error": False, "result": None}
+        return {"error": "Execution timeout (10s)", "output": None, "exitCode": -1, "timed_out": True, "parse_error": False, "result": None, "execution_time_ms": 10000}
     except Exception as e:
-        return {"error": str(e), "output": None, "exitCode": -1, "timed_out": False, "parse_error": True, "result": None}
+        return {"error": str(e), "output": None, "exitCode": -1, "timed_out": False, "parse_error": True, "result": None, "execution_time_ms": 0}
