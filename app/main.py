@@ -8,29 +8,42 @@ Plus Blog Admin API
 import json
 import logging
 import os
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from .executor import execute_in_sandbox, sanitize_code
 
-# Import new routers
-from .routers import auth, blog
+# Import routers
+from .routers import auth as auth_router
+from .routers import blog
+from .routers import progress
+
+# Import models for DB init
+from .db import engine
+from .models.user import Base
+
+# Import progress updater
+from .routers.progress import update_progress_after_submission
+from .db import get_db
 
 # Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dsamaster-api")
 
+# Initialize database tables on startup
+Base.metadata.create_all(bind=engine)
+
 # FastAPI app
 app = FastAPI(
     title="DSAMaster Code Execution API",
-    description="Docker-sandboxed execution for coding challenges + Blog Admin API",
-    version="1.1.0"
+    description="Docker-sandboxed execution for coding challenges + Blog + Auth API",
+    version="2.0.0"
 )
 
-# CORS - updated to support Authorization header and explicit origins
+# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ALLOWED_ORIGINS", "https://dsamaster.de,http://localhost:5173").split(","),
@@ -40,9 +53,10 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
-# Include blog and auth routers
-app.include_router(auth.router)
+# Include routers
+app.include_router(auth_router.router)
 app.include_router(blog.router)
+app.include_router(progress.router)
 
 # ---------------------------------------------------------------------------
 # Request / Response models
@@ -86,15 +100,13 @@ async def health():
     return {
         "status": "ok",
         "timestamp": __import__("datetime").datetime.utcnow().isoformat(),
-        "version": "1.1.0"
+        "version": "2.0.0"
     }
 
 
 @app.post("/api/run", response_model=RunResponse)
 async def run_code(request: RunRequest):
-    """
-    Execute code against test cases in a Docker sandbox.
-    """
+    """Execute code against test cases in a Docker sandbox."""
     supported = ["python", "java", "cpp"]
     if request.language not in supported:
         raise HTTPException(
@@ -109,6 +121,7 @@ async def run_code(request: RunRequest):
 
     results = []
     all_passed = True
+    total_runtime = 0
 
     for test_case in request.test_cases:
         execution = await execute_in_sandbox(
@@ -127,6 +140,8 @@ async def run_code(request: RunRequest):
 
         if not passed:
             all_passed = False
+
+        total_runtime += execution["execution_time_ms"]
 
         results.append(TestResult(
             input=test_case.input,
