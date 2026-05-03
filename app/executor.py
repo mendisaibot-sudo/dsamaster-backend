@@ -10,7 +10,7 @@ def sanitize_code(code: str, language: str) -> str:
     # Skip sanitation for now - rely on Docker isolation
     return code
 
-def execute_in_sandbox(code: str, language: str, test_input, function_name: str = "solution"):
+async def execute_in_sandbox(code: str, language: str, test_input, function_name: str = "solution"):   # FIX: added async to match await in main.py
     """Execute code in Docker sandbox"""
     serialized = json.dumps(test_input)
     
