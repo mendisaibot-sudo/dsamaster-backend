@@ -1,6 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dsamaster
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - dsa-network
+
   api:
     build:
       context: .
@@ -9,32 +20,24 @@ services:
       - "3001:3001"
     environment:
       - PORT=3001
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/dsamaster
       - ALLOWED_ORIGINS=http://localhost:5173,https://dsamaster.de
       - EXECUTOR_IMAGE=dsamaster-executor:latest
       - EXECUTOR_TIMEOUT=10
       - EXECUTOR_MEMORY=128m
       - EXECUTOR_CPU=1.0
       - BLOG_ADMIN_USERNAME=admin
-      - BLOG_ADMIN_PASSWORD=${BLOG_ADMIN_PASSWORD:-admin123}
-      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-not-for-production}
-      - EMAIL_ADDRESS=${EMAIL_ADDRESS}
-      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
-      - SMTP_SERVER=${SMTP_SERVER:-smtp.gmail.com}
-      - SMTP_PORT=${SMTP_PORT:-587}
-      - FRONTEND_BASE_URL=${FRONTEND_BASE_URL:-https://dsamaster.de}
+      - BLOG_ADMIN_PASSWORD=admin123
+      - JWT_SECRET_KEY=dev-secret-not-for-production
+    env_file:
+      - .env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /tmp:/tmp
       - ./data:/app/data
+    depends_on:
+      - postgres
     restart: unless-stopped
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
-    cap_add:
-      - CHOWN
-      - SETGID
-      - SETUID
     networks:
       - dsa-network
 
@@ -43,9 +46,12 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     image: dsamaster-executor:latest
-    command: "echo 'executor image built'"
+    command: "echo executor image built"
     networks:
       - dsa-network
+
+volumes:
+  postgres_data:
 
 networks:
   dsa-network:
