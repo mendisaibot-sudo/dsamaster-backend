@@ -17,6 +17,11 @@ services:
       - BLOG_ADMIN_USERNAME=admin
       - BLOG_ADMIN_PASSWORD=${BLOG_ADMIN_PASSWORD:-admin123}
       - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-not-for-production}
+      - EMAIL_ADDRESS=${EMAIL_ADDRESS}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+      - SMTP_SERVER=${SMTP_SERVER:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - FRONTEND_BASE_URL=${FRONTEND_BASE_URL:-https://dsamaster.de}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /tmp:/tmp
