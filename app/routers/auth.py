@@ -204,7 +204,8 @@ async def verify_email(token: str, db: Session = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=400, detail="Invalid verification token")
 
-    if user.verification_token_expires_at and datetime.now(timezone.utc).replace(tzinfo=None) > user.verification_token_expires_at:
+    db_expires = user.verification_token_expires_at.replace(tzinfo=None) if user.verification_token_expires_at.tzinfo else user.verification_token_expires_at
+    if db_expires and datetime.utcnow() > db_expires:
         raise HTTPException(status_code=400, detail="Verification token has expired")
 
     user.email_verified = True
@@ -313,7 +314,8 @@ async def reset_password(data: ResetPasswordRequest, db: Session = Depends(get_d
     if not user:
         raise HTTPException(status_code=400, detail="Invalid reset token")
 
-    if user.reset_token_expires_at and datetime.now(timezone.utc).replace(tzinfo=None) > user.reset_token_expires_at:
+    db_expires = user.reset_token_expires_at.replace(tzinfo=None) if user.reset_token_expires_at.tzinfo else user.reset_token_expires_at
+    if db_expires and datetime.utcnow() > db_expires:
         raise HTTPException(status_code=400, detail="Reset token has expired")
 
     user.password_hash = _hash_password(data.new_password)
@@ -337,7 +339,7 @@ async def refresh(data: dict, db: Session = Depends(get_db)):
     auth_token = db.query(AuthToken).filter(
         AuthToken.token_hash == token_hash,
         AuthToken.revoked_at.is_(None),
-        AuthToken.expires_at > datetime.now(timezone.utc).replace(tzinfo=None)
+        (AuthToken.expires_at.replace(tzinfo=None) if AuthToken.expires_at.tzinfo else AuthToken.expires_at) > datetime.utcnow()
     ).first()
 
     if not auth_token:
