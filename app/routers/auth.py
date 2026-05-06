@@ -4,7 +4,7 @@ import base64
 import hashlib
 import re
 import secrets
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import bcrypt
 from fastapi import APIRouter, Depends, HTTPException, Request
@@ -101,7 +101,7 @@ def _verify_password(password: str, password_hash: str) -> bool:
 def _create_refresh_token(user_id: str, db: Session) -> str:
     raw_token = secrets.token_urlsafe(32)
     token_hash = hashlib.sha256(raw_token.encode()).hexdigest()
-    expires_at = datetime.utcnow() + timedelta(days=7)
+    expires_at = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(days=7)
     auth_token = AuthToken(
         user_id=user_id,
         token_hash=token_hash,
@@ -119,7 +119,7 @@ def _revoke_refresh_token(token: str, db: Session):
         AuthToken.revoked_at.is_(None)
     ).first()
     if auth_token:
-        auth_token.revoked_at = datetime.utcnow()
+        auth_token.revoked_at = datetime.now(timezone.utc).replace(tzinfo=None)
         db.commit()
         return True
     return False
@@ -163,7 +163,7 @@ async def register(data: RegisterRequest, db: Session = Depends(get_db)):
 
     display_name = data.display_name or f"{data.first_name} {data.last_name}"
     verification_token = secrets.token_urlsafe(32)
-    verification_expires = datetime.utcnow() + timedelta(hours=48)
+    verification_expires = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=48)
 
     user = User(
         email=data.email,
@@ -204,7 +204,7 @@ async def verify_email(token: str, db: Session = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=400, detail="Invalid verification token")
 
-    if user.verification_token_expires_at and datetime.utcnow() > user.verification_token_expires_at:
+    if user.verification_token_expires_at and datetime.now(timezone.utc).replace(tzinfo=None) > user.verification_token_expires_at:
         raise HTTPException(status_code=400, detail="Verification token has expired")
 
     user.email_verified = True
@@ -240,7 +240,7 @@ async def resend_verification(data: ResendVerificationRequest, db: Session = Dep
 
     # Generate new token
     verification_token = secrets.token_urlsafe(32)
-    verification_expires = datetime.utcnow() + timedelta(hours=48)
+    verification_expires = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=48)
     user.verification_token = verification_token
     user.verification_token_expires_at = verification_expires
     db.commit()
@@ -271,7 +271,7 @@ async def login(data: LoginRequest, db: Session = Depends(get_db)):
     if not user.is_active:
         raise HTTPException(status_code=401, detail="Account is deactivated")
 
-    user.last_login_at = datetime.utcnow()
+    user.last_login_at = datetime.now(timezone.utc).replace(tzinfo=None)
     db.commit()
 
     access_token = create_access_token(str(user.id), expires_hours=24)
@@ -290,7 +290,7 @@ async def forgot_password(data: ForgotPasswordRequest, db: Session = Depends(get
     user = db.query(User).filter(User.email == data.email).first()
     if user:
         reset_token = secrets.token_urlsafe(32)
-        reset_expires = datetime.utcnow() + timedelta(hours=24)
+        reset_expires = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=24)
         user.reset_token = reset_token
         user.reset_token_expires_at = reset_expires
         db.commit()
@@ -313,7 +313,7 @@ async def reset_password(data: ResetPasswordRequest, db: Session = Depends(get_d
     if not user:
         raise HTTPException(status_code=400, detail="Invalid reset token")
 
-    if user.reset_token_expires_at and datetime.utcnow() > user.reset_token_expires_at:
+    if user.reset_token_expires_at and datetime.now(timezone.utc).replace(tzinfo=None) > user.reset_token_expires_at:
         raise HTTPException(status_code=400, detail="Reset token has expired")
 
     user.password_hash = _hash_password(data.new_password)
@@ -337,7 +337,7 @@ async def refresh(data: dict, db: Session = Depends(get_db)):
     auth_token = db.query(AuthToken).filter(
         AuthToken.token_hash == token_hash,
         AuthToken.revoked_at.is_(None),
-        AuthToken.expires_at > datetime.utcnow()
+        AuthToken.expires_at > datetime.now(timezone.utc).replace(tzinfo=None)
     ).first()
 
     if not auth_token:
