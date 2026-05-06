@@ -119,7 +119,7 @@ def _password_reset_email_html(reset_link: str):
 
 def send_verification_email(to_email: str, token: str):
     """Send an email verification link."""
-    link = f"{BASE_URL}/verify-email?token={token}"
+    link = f"{BASE_URL}/auth/verify-email?token={token}"
     subject = "Verify Your DSAMaster Account"
     html = _verification_email_html(link)
     _send_email(to_email, subject, html)
@@ -127,7 +127,7 @@ def send_verification_email(to_email: str, token: str):
 
 def send_password_reset_email(to_email: str, token: str):
     """Send a password reset link."""
-    link = f"{BASE_URL}/reset-password?token={token}"
+    link = f"{BASE_URL}/auth/reset-password?token={token}"
     subject = "Reset Your DSAMaster Password"
     html = _password_reset_email_html(link)
     _send_email(to_email, subject, html)

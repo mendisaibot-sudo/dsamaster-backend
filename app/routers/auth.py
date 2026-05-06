@@ -212,10 +212,18 @@ async def verify_email(token: str, db: Session = Depends(get_db)):
     user.verification_token = None
     user.verification_token_expires_at = None
     db.commit()
+    db.refresh(user)
+
+    # Auto-login: create tokens after verification
+    access_token = create_access_token(str(user.id), expires_hours=24)
+    refresh_token = _create_refresh_token(str(user.id), db)
 
     return {
         "success": True,
-        "message": "Account registration completed successfully and email verified"
+        "message": "Account registration completed successfully and email verified",
+        "token": access_token,
+        "refresh_token": refresh_token,
+        "user": user.to_dict()
     }
 
 
