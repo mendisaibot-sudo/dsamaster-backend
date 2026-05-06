@@ -20,6 +20,7 @@ from .executor import execute_in_sandbox, sanitize_code
 from .routers import auth as auth_router
 from .routers import blog
 from .routers import progress
+from .routers import admin
 
 # Import models for DB init
 from .db import engine
@@ -57,6 +58,7 @@ app.add_middleware(
 app.include_router(auth_router.router)
 app.include_router(blog.router)
 app.include_router(progress.router)
+app.include_router(admin.router)
 
 # ---------------------------------------------------------------------------
 # Request / Response models
