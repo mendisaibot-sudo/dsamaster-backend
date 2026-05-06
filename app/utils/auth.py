@@ -2,12 +2,16 @@
 
 import os
 import time
+import uuid
 from typing import Optional
 
 from fastapi import HTTPException, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from jose import JWTError, jwt
 from passlib.context import CryptContext
+
+from app.db import SessionLocal
+from app.models.user import User
 
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "dev-secret-not-for-production")
 BLOG_ADMIN_USERNAME = os.getenv("BLOG_ADMIN_USERNAME", "admin")
@@ -84,12 +88,14 @@ async def require_admin(request: Request) -> dict:
     if not user_id:
         raise HTTPException(status_code=401, detail="Token missing sub claim")
     
-    # Check against database for admin role
-    from app.db import SessionLocal
-    from app.models.user import User
+    try:
+        uuid_user_id = uuid.UUID(user_id)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Invalid token format")
+    
     db = SessionLocal()
     try:
-        user = db.query(User).filter(User.id == int(user_id)).first()
+        user = db.query(User).filter(User.id == uuid_user_id).first()
         if not user:
             raise HTTPException(status_code=401, detail="User not found")
         if user.role != "admin":
