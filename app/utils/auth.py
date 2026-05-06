@@ -1,4 +1,4 @@
-"""JWT authentication utilities."""
+"""JWT authentication utilities for blog API."""
 
 import os
 import time
@@ -78,8 +78,30 @@ async def get_current_user(request: Request) -> dict:
 
 
 async def require_admin(request: Request) -> dict:
-    """Verify the request has a valid admin JWT."""
-    user = await get_current_user(request)
-    if user.get("sub") != BLOG_ADMIN_USERNAME:
+    """Verify the request has a valid admin JWT (role-based check)."""
+    token_payload = await get_current_user(request)
+    user_id = token_payload.get("sub")
+    if not user_id:
+        raise HTTPException(status_code=401, detail="Token missing sub claim")
+    
+    # Check against database for admin role
+    from app.db import SessionLocal
+    from app.models.user import User
+    db = SessionLocal()
+    try:
+        user = db.query(User).filter(User.id == int(user_id)).first()
+        if not user:
+            raise HTTPException(status_code=401, detail="User not found")
+        if user.role != "admin":
+            raise HTTPException(status_code=403, detail="Admin access required")
+        return {"sub": user_id, "role": user.role, "email": user.email}
+    finally:
+        db.close()
+
+
+async def require_admin_fallback(request: Request) -> dict:
+    """Legacy fallback: verify token sub matches BLOG_ADMIN_USERNAME."""
+    token_payload = await get_current_user(request)
+    if token_payload.get("sub") != BLOG_ADMIN_USERNAME:
         raise HTTPException(status_code=403, detail="Admin access required")
-    return user
+    return token_payload
