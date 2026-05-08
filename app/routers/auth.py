@@ -2,12 +2,14 @@
 
 import base64
 import hashlib
+import os
 import re
 import secrets
 from datetime import datetime, timedelta, timezone
 
 import bcrypt
 from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, EmailStr, validator
 from sqlalchemy.orm import Session
 
@@ -16,6 +18,7 @@ from app.models.user import User, AuthToken, UserStats, UserProgress, Submission
 from app.utils.auth import create_access_token, verify_token
 from app.utils.captcha import create_captcha, verify_captcha
 from app.utils.email import send_verification_email, send_password_reset_email
+from app.utils.oauth import oauth, find_or_create_oauth_user, FRONTEND_BASE_URL
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
@@ -369,3 +372,102 @@ async def logout(data: dict, db: Session = Depends(get_db)):
 @router.get("/me")
 async def get_me(current_user: User = Depends(get_current_user)):
     return {"success": True, "user": current_user.to_dict()}
+
+
+# ---------------------------------------------------------------------------
+# OAuth Routes
+# ---------------------------------------------------------------------------
+
+@router.get("/oauth/google")
+async def oauth_google(request: Request):
+    """Redirect to Google OAuth authorization endpoint."""
+    redirect_uri = f"{FRONTEND_BASE_URL}/api/auth/oauth/google/callback"
+    return await oauth.google.authorize_redirect(request, redirect_uri)
+
+
+@router.get("/oauth/google/callback")
+async def oauth_google_callback(request: Request, db: Session = Depends(get_db)):
+    """Handle Google OAuth callback and authenticate user."""
+    try:
+        token = await oauth.google.authorize_access_token(request)
+        user_info = token.get("userinfo")
+        if not user_info:
+            raise HTTPException(status_code=400, detail="Failed to get user info from Google")
+
+        email = user_info.get("email")
+        name = user_info.get("name", email)
+        oauth_id = user_info.get("sub")
+        avatar = user_info.get("picture")
+
+        if not email or not oauth_id:
+            raise HTTPException(status_code=400, detail="Incomplete Google account information")
+
+        access_token, refresh_token = find_or_create_oauth_user(
+            provider="google",
+            oauth_id=oauth_id,
+            email=email,
+            name=name,
+            avatar=avatar,
+            db=db
+        )
+
+        redirect_url = f"{FRONTEND_BASE_URL}/auth/callback?token={access_token}&refresh={refresh_token}"
+        return RedirectResponse(url=redirect_url, status_code=302)
+    except Exception as e:
+        # Redirect to frontend with error
+        error_url = f"{FRONTEND_BASE_URL}/auth/callback?error=google_auth_failed"
+        return RedirectResponse(url=error_url, status_code=302)
+
+
+@router.get("/oauth/github")
+async def oauth_github(request: Request):
+    """Redirect to GitHub OAuth authorization endpoint."""
+    redirect_uri = f"{FRONTEND_BASE_URL}/api/auth/oauth/github/callback"
+    return await oauth.github.authorize_redirect(request, redirect_uri)
+
+
+@router.get("/oauth/github/callback")
+async def oauth_github_callback(request: Request, db: Session = Depends(get_db)):
+    """Handle GitHub OAuth callback and authenticate user."""
+    try:
+        token = await oauth.github.authorize_access_token(request)
+
+        # Fetch user profile from GitHub API
+        resp = await oauth.github.get("user", token=token)
+        profile = resp.json()
+
+        oauth_id = str(profile.get("id"))
+        name = profile.get("name") or profile.get("login", "GitHub User")
+        avatar = profile.get("avatar_url")
+
+        # Get email (may require separate endpoint if not public)
+        email = profile.get("email")
+        if not email:
+            email_resp = await oauth.github.get("user/emails", token=token)
+            emails = email_resp.json()
+            if emails:
+                # Prefer primary verified email
+                primary = next(
+                    (e for e in emails if e.get("primary") and e.get("verified")),
+                    emails[0]
+                )
+                email = primary.get("email")
+
+        if not email or not oauth_id:
+            raise HTTPException(status_code=400, detail="Incomplete GitHub account information")
+
+        access_token, refresh_token = find_or_create_oauth_user(
+            provider="github",
+            oauth_id=oauth_id,
+            email=email,
+            name=name,
+            avatar=avatar,
+            db=db
+        )
+
+        redirect_url = f"{FRONTEND_BASE_URL}/auth/callback?token={access_token}&refresh={refresh_token}"
+        return RedirectResponse(url=redirect_url, status_code=302)
+    except Exception as e:
+        # Redirect to frontend with error
+        error_url = f"{FRONTEND_BASE_URL}/auth/callback?error=github_auth_failed"
+        return RedirectResponse(url=error_url, status_code=302)
