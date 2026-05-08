@@ -12,6 +12,7 @@ from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.sessions import SessionMiddleware
 from pydantic import BaseModel
 
 from .executor import execute_in_sandbox, sanitize_code
@@ -45,6 +46,12 @@ app = FastAPI(
 )
 
 # CORS
+app.add_middleware(
+    SessionMiddleware, 
+    secret_key=os.getenv("JWT_SECRET_KEY", "dev-secret-key"),
+    max_age=3600
+)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ALLOWED_ORIGINS", "https://dsamaster.de,http://localhost:5173").split(","),
