@@ -22,10 +22,12 @@ from .routers import auth as auth_router
 from .routers import blog
 from .routers import progress
 from .routers import admin
+from .routers import content as content_router
 
 # Import models for DB init
 from .db import engine
-from .models.user import Base
+from .models.user import Base as UserBase
+from .models.content import Base as ContentBase
 
 # Import progress updater
 from .routers.progress import update_progress_after_submission
@@ -36,7 +38,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dsamaster-api")
 
 # Initialize database tables on startup
-Base.metadata.create_all(bind=engine)
+UserBase.metadata.create_all(bind=engine)
+ContentBase.metadata.create_all(bind=engine)
 
 # FastAPI app
 app = FastAPI(
@@ -66,6 +69,7 @@ app.include_router(auth_router.router)
 app.include_router(blog.router)
 app.include_router(progress.router)
 app.include_router(admin.router)
+app.include_router(content_router.router)
 
 # ---------------------------------------------------------------------------
 # Request / Response models
