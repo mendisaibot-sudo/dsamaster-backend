@@ -38,8 +38,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dsamaster-api")
 
 # Initialize database tables on startup
-UserBase.metadata.create_all(bind=engine)
 ContentBase.metadata.create_all(bind=engine)
+UserBase.metadata.create_all(bind=engine)
 
 # FastAPI app
 app = FastAPI(

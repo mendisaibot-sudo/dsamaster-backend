@@ -38,6 +38,7 @@ class User(Base):
     # Relationships
     auth_tokens = relationship("AuthToken", back_populates="user", cascade="all, delete-orphan")
     progress = relationship("UserProgress", back_populates="user", cascade="all, delete-orphan")
+    lesson_progress = relationship("UserLessonProgress", back_populates="user", cascade="all, delete-orphan")
     submissions = relationship("Submission", back_populates="user", cascade="all, delete-orphan")
     stats = relationship("UserStats", back_populates="user", uselist=False, cascade="all, delete-orphan")
 
@@ -184,4 +185,38 @@ class UserStats(Base):
             "current_streak": self.current_streak,
             "longest_streak": self.longest_streak,
             "last_solved_at": self.last_solved_at.isoformat() if self.last_solved_at else None,
+        }
+
+
+class UserLessonProgress(Base):
+    __tablename__ = "user_lesson_progress"
+    __table_args__ = (
+        UniqueConstraint("user_id", "lesson_id", name="uix_user_lesson"),
+    )
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    lesson_id = Column(UUID(as_uuid=True), ForeignKey("lessons.id", ondelete="CASCADE"), nullable=False)
+    status = Column(String(20), default='not_started', nullable=False)
+    percent_complete = Column(Integer, default=0)
+    time_spent_seconds = Column(Integer, default=0)
+    started_at = Column(DateTime(timezone=True), nullable=True)
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+    last_accessed_at = Column(DateTime(timezone=True), nullable=True)
+    created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    user = relationship("User", back_populates="lesson_progress")
+
+    def to_dict(self):
+        return {
+            "id": str(self.id),
+            "user_id": str(self.user_id),
+            "lesson_id": str(self.lesson_id),
+            "status": self.status,
+            "percent_complete": self.percent_complete,
+            "time_spent_seconds": self.time_spent_seconds,
+            "started_at": self.started_at.isoformat() if self.started_at else None,
+            "completed_at": self.completed_at.isoformat() if self.completed_at else None,
+            "last_accessed_at": self.last_accessed_at.isoformat() if self.last_accessed_at else None,
         }
