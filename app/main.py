@@ -29,10 +29,6 @@ from .db import engine
 from .models.user import Base as UserBase
 from .models.content import Base as ContentBase
 
-# Import progress updater
-from .routers.progress import update_progress_after_submission
-from .db import get_db
-
 # Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("dsamaster-api")
