@@ -9,14 +9,14 @@ from sqlalchemy import (
     DateTime,
     ForeignKey,
     Integer,
-    JSONB,
     String,
     Text,
     UniqueConstraint,
 )
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import relationship
 
-from app.db import Base
+from app.models.user import Base
 
 
 class Category(Base):
@@ -28,6 +28,7 @@ class Category(Base):
     description = Column(Text, nullable=True)
     icon = Column(String(50), nullable=True)
     color = Column(String(20), nullable=True)
+    order_index = Column(Integer, default=0)
     created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
     updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
 
