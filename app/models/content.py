@@ -1,29 +1,37 @@
-"""Content platform models for DSAMaster."""
-
 import uuid
 from datetime import datetime
-from sqlalchemy import (
-    Column, String, DateTime, Integer, Text, ForeignKey, CheckConstraint, UniqueConstraint
-)
-from sqlalchemy.dialects.postgresql import UUID, JSONB
-from sqlalchemy.orm import declarative_base, relationship
 
-Base = declarative_base()
+from sqlalchemy import (
+    UUID,
+    Boolean,
+    CheckConstraint,
+    Column,
+    DateTime,
+    ForeignKey,
+    Integer,
+    JSONB,
+    String,
+    Text,
+    UniqueConstraint,
+)
+from sqlalchemy.orm import relationship
+
+from app.db import Base
 
 
 class Category(Base):
     __tablename__ = "categories"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    name = Column(String(100), nullable=False)
+    name = Column(String(100), unique=True, nullable=False)
     slug = Column(String(100), unique=True, nullable=False)
     description = Column(Text, nullable=True)
-    icon = Column(String(100), nullable=True)
+    icon = Column(String(50), nullable=True)
     color = Column(String(20), nullable=True)
-    order_index = Column(Integer, default=0, nullable=False)
     created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    topics = relationship("Topic", back_populates="category", cascade="all, delete-orphan")
+    topics = relationship("Topic", back_populates="category", cascade="all, delete-orphan", order_by="Topic.order_index")
 
     def to_dict(self):
         return {
@@ -33,9 +41,6 @@ class Category(Base):
             "description": self.description,
             "icon": self.icon,
             "color": self.color,
-            "order_index": self.order_index,
-            "topic_count": len(self.topics) if self.topics else 0,
-            "created_at": self.created_at.isoformat() if self.created_at else None,
         }
 
 
@@ -49,8 +54,9 @@ class Topic(Base):
     description = Column(Text, nullable=True)
     difficulty = Column(String(10), nullable=False)
     estimated_hours = Column(Integer, default=0)
-    order_index = Column(Integer, default=0, nullable=False)
+    order_index = Column(Integer, default=0)
     created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
 
     __table_args__ = (
         CheckConstraint("difficulty IN ('beginner','intermediate','advanced')", name="check_topic_difficulty"),
@@ -58,7 +64,7 @@ class Topic(Base):
 
     category = relationship("Category", back_populates="topics")
     lessons = relationship("Lesson", back_populates="topic", cascade="all, delete-orphan", order_by="Lesson.order_index")
-    exercises = relationship("Exercise", back_populates="topic", cascade="all, delete-orphan")
+    exercises = relationship("Exercise", back_populates="topic", cascade="all, delete-orphan", order_by="Exercise.order_index")
 
     def to_dict(self):
         return {
@@ -70,8 +76,6 @@ class Topic(Base):
             "difficulty": self.difficulty,
             "estimated_hours": self.estimated_hours,
             "order_index": self.order_index,
-            "lesson_count": len(self.lessons) if self.lessons else 0,
-            "created_at": self.created_at.isoformat() if self.created_at else None,
         }
 
 
@@ -95,6 +99,7 @@ class Lesson(Base):
 
     topic = relationship("Topic", back_populates="lessons")
     code_examples = relationship("CodeExample", back_populates="lesson", cascade="all, delete-orphan", order_by="CodeExample.id")
+    exercises = relationship("Exercise", back_populates="lesson", cascade="all, delete-orphan", order_by="Exercise.order_index")
 
     def to_dict(self):
         return {
@@ -114,6 +119,7 @@ class Lesson(Base):
         d = self.to_dict()
         d["content"] = self.content_json
         d["code_examples"] = [ex.to_dict() for ex in self.code_examples]
+        d["exercises"] = [ex.to_dict() for ex in self.exercises] if self.exercises else []
         return d
 
 
@@ -124,10 +130,8 @@ class CodeExample(Base):
     lesson_id = Column(UUID(as_uuid=True), ForeignKey("lessons.id", ondelete="CASCADE"), nullable=False)
     language = Column(String(20), nullable=False)
     code = Column(Text, nullable=False)
-    explanation = Column(Text, nullable=True)
+    description = Column(Text, nullable=True)
     output = Column(Text, nullable=True)
-    order_index = Column(Integer, default=0)
-    created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
 
     lesson = relationship("Lesson", back_populates="code_examples")
 
@@ -137,9 +141,8 @@ class CodeExample(Base):
             "lesson_id": str(self.lesson_id),
             "language": self.language,
             "code": self.code,
-            "explanation": self.explanation,
+            "description": self.description,
             "output": self.output,
-            "order_index": self.order_index,
         }
 
 
@@ -147,12 +150,14 @@ class Exercise(Base):
     __tablename__ = "exercises"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    topic_id = Column(UUID(as_uuid=True), ForeignKey("topics.id", ondelete="CASCADE"), nullable=False)
+    topic_id = Column(UUID(as_uuid=True), ForeignKey("topics.id", ondelete="CASCADE"), nullable=True)
+    lesson_id = Column(UUID(as_uuid=True), ForeignKey("lessons.id", ondelete="CASCADE"), nullable=True)
     type = Column(String(10), nullable=False)
     question = Column(Text, nullable=False)
     options_json = Column(JSONB, nullable=True)
     correct_answer = Column(Text, nullable=False)
     hint = Column(Text, nullable=True)
+    explanation = Column(Text, nullable=True)
     difficulty = Column(String(10), default="beginner")
     order_index = Column(Integer, default=0)
     created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
@@ -163,15 +168,89 @@ class Exercise(Base):
     )
 
     topic = relationship("Topic", back_populates="exercises")
+    lesson = relationship("Lesson", back_populates="exercises")
 
     def to_dict(self):
         return {
             "id": str(self.id),
-            "topic_id": str(self.topic_id),
+            "topic_id": str(self.topic_id) if self.topic_id else None,
+            "lesson_id": str(self.lesson_id) if self.lesson_id else None,
             "type": self.type,
             "question": self.question,
             "options": self.options_json,
             "hint": self.hint,
+            "explanation": self.explanation,
             "difficulty": self.difficulty,
             "order_index": self.order_index,
+        }
+
+
+class UserLessonProgress(Base):
+    __tablename__ = "user_lesson_progress"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    lesson_id = Column(UUID(as_uuid=True), ForeignKey("lessons.id", ondelete="CASCADE"), nullable=False)
+    status = Column(String(20), default="not_started")
+    started_at = Column(DateTime(timezone=True), nullable=True)
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+    last_position = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    __table_args__ = (
+        CheckConstraint("status IN ('not_started','in_progress','completed')", name="check_lesson_status"),
+        UniqueConstraint("user_id", "lesson_id", name="uix_user_lesson"),
+    )
+
+    user = relationship("User", back_populates="lesson_progress")
+
+    def to_dict(self):
+        return {
+            "id": str(self.id),
+            "user_id": str(self.user_id),
+            "lesson_id": str(self.lesson_id),
+            "status": self.status,
+            "started_at": self.started_at.isoformat() if self.started_at else None,
+            "completed_at": self.completed_at.isoformat() if self.completed_at else None,
+            "last_position": self.last_position,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
+        }
+
+
+class UserExerciseProgress(Base):
+    __tablename__ = "user_exercise_progress"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    lesson_id = Column(UUID(as_uuid=True), ForeignKey("lessons.id", ondelete="CASCADE"), nullable=False)
+    exercise_id = Column(UUID(as_uuid=True), ForeignKey("exercises.id", ondelete="CASCADE"), nullable=False)
+    correct = Column(Boolean, default=False)
+    attempts = Column(Integer, default=0)
+    last_answer = Column(Text, nullable=True)
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+    created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at = Column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    __table_args__ = (
+        UniqueConstraint("user_id", "exercise_id", name="uix_user_exercise"),
+    )
+
+    user = relationship("User", back_populates="exercise_progress")
+    lesson = relationship("Lesson")
+    exercise = relationship("Exercise")
+
+    def to_dict(self):
+        return {
+            "id": str(self.id),
+            "user_id": str(self.user_id),
+            "lesson_id": str(self.lesson_id),
+            "exercise_id": str(self.exercise_id),
+            "correct": self.correct,
+            "attempts": self.attempts,
+            "last_answer": self.last_answer,
+            "completed_at": self.completed_at.isoformat() if self.completed_at else None,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
         }
