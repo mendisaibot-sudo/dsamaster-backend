@@ -1,0 +1,1777 @@
+{
+  "react": {
+    "category": {
+      "name": "React",
+      "slug": "react",
+      "description": "A JavaScript library for building user interfaces with components, state, and hooks",
+      "icon": "react",
+      "color": "#61DAFB"
+    },
+    "topics": [
+      {
+        "name": "Introduction to React",
+        "slug": "introduction-to-react",
+        "difficulty": "beginner",
+        "description": "React fundamentals, virtual DOM, component-based architecture, and why React"
+      },
+      {
+        "name": "JSX",
+        "slug": "jsx",
+        "difficulty": "beginner",
+        "description": "JSX syntax, expressions, attributes, nesting, and best practices"
+      },
+      {
+        "name": "Components",
+        "slug": "components",
+        "difficulty": "beginner",
+        "description": "Functional and class components, component composition, and reusability"
+      },
+      {
+        "name": "Props",
+        "slug": "props",
+        "difficulty": "beginner",
+        "description": "Passing data via props, prop-types, default props, and destructuring"
+      },
+      {
+        "name": "State",
+        "slug": "state",
+        "difficulty": "beginner",
+        "description": "Component state, setState, state updates, and lifting state up"
+      },
+      {
+        "name": "useState Hook",
+        "slug": "usestate-hook",
+        "difficulty": "intermediate",
+        "description": "useState for local state management, arrays, objects, and functional updates"
+      },
+      {
+        "name": "useEffect Hook",
+        "slug": "useeffect-hook",
+        "difficulty": "intermediate",
+        "description": "useEffect for side effects, dependencies, cleanup, and lifecycle replacement"
+      },
+      {
+        "name": "useContext Hook",
+        "slug": "usecontext-hook",
+        "difficulty": "intermediate",
+        "description": "useContext for global state sharing, providers, and consumers"
+      },
+      {
+        "name": "Events",
+        "slug": "events",
+        "difficulty": "intermediate",
+        "description": "Handling events in React, synthetic events, event delegation, and binding"
+      },
+      {
+        "name": "Conditional Rendering",
+        "slug": "conditional-rendering",
+        "difficulty": "intermediate",
+        "description": "If statements, ternary operators, logical AND, and conditional components"
+      },
+      {
+        "name": "Lists and Keys",
+        "slug": "lists-and-keys",
+        "difficulty": "intermediate",
+        "description": "Rendering lists, map function, key prop importance, and list filtering"
+      },
+      {
+        "name": "Forms",
+        "slug": "forms",
+        "difficulty": "intermediate",
+        "description": "Controlled vs uncontrolled components, form handling, validation, and refs"
+      },
+      {
+        "name": "React Router",
+        "slug": "react-router",
+        "difficulty": "intermediate",
+        "description": "Client-side routing, BrowserRouter, Routes, Link, useParams, and navigation"
+      },
+      {
+        "name": "Context API",
+        "slug": "context-api",
+        "difficulty": "advanced",
+        "description": "Deep context usage, multiple contexts, performance considerations, and patterns"
+      },
+      {
+        "name": "Redux",
+        "slug": "redux",
+        "difficulty": "advanced",
+        "description": "Redux store, actions, reducers, middleware, Redux Toolkit, and state normalization"
+      },
+      {
+        "name": "CSS-in-JS",
+        "slug": "css-in-js",
+        "difficulty": "advanced",
+        "description": "Styled-components, Emotion, inline styles, CSS modules, and theming approaches"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "introduction-to-react",
+        "title": "Introduction to React - Introduction",
+        "slug": "introduction-to-react-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Introduction to React at Introduction level. Here you will learn about React fundamentals, virtual DOM, component-based architecture, and why React."
+      },
+      {
+        "topic_slug": "introduction-to-react",
+        "title": "Introduction to React - Intermediate",
+        "slug": "introduction-to-react-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Introduction to React at Intermediate level. Here you will learn about React fundamentals, virtual DOM, component-based architecture, and why React."
+      },
+      {
+        "topic_slug": "introduction-to-react",
+        "title": "Introduction to React - Advanced",
+        "slug": "introduction-to-react-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Introduction to React at Advanced level. Here you will learn about React fundamentals, virtual DOM, component-based architecture, and why React."
+      },
+      {
+        "topic_slug": "jsx",
+        "title": "JSX - Introduction",
+        "slug": "jsx-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for JSX at Introduction level. Here you will learn about JSX syntax, expressions, attributes, nesting, and best practices."
+      },
+      {
+        "topic_slug": "jsx",
+        "title": "JSX - Intermediate",
+        "slug": "jsx-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for JSX at Intermediate level. Here you will learn about JSX syntax, expressions, attributes, nesting, and best practices."
+      },
+      {
+        "topic_slug": "jsx",
+        "title": "JSX - Advanced",
+        "slug": "jsx-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for JSX at Advanced level. Here you will learn about JSX syntax, expressions, attributes, nesting, and best practices."
+      },
+      {
+        "topic_slug": "components",
+        "title": "Components - Introduction",
+        "slug": "components-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Components at Introduction level. Here you will learn about Functional and class components, component composition, and reusability."
+      },
+      {
+        "topic_slug": "components",
+        "title": "Components - Intermediate",
+        "slug": "components-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Components at Intermediate level. Here you will learn about Functional and class components, component composition, and reusability."
+      },
+      {
+        "topic_slug": "components",
+        "title": "Components - Advanced",
+        "slug": "components-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Components at Advanced level. Here you will learn about Functional and class components, component composition, and reusability."
+      },
+      {
+        "topic_slug": "props",
+        "title": "Props - Introduction",
+        "slug": "props-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Props at Introduction level. Here you will learn about Passing data via props, prop-types, default props, and destructuring."
+      },
+      {
+        "topic_slug": "props",
+        "title": "Props - Intermediate",
+        "slug": "props-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Props at Intermediate level. Here you will learn about Passing data via props, prop-types, default props, and destructuring."
+      },
+      {
+        "topic_slug": "props",
+        "title": "Props - Advanced",
+        "slug": "props-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Props at Advanced level. Here you will learn about Passing data via props, prop-types, default props, and destructuring."
+      },
+      {
+        "topic_slug": "state",
+        "title": "State - Introduction",
+        "slug": "state-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for State at Introduction level. Here you will learn about Component state, setState, state updates, and lifting state up."
+      },
+      {
+        "topic_slug": "state",
+        "title": "State - Intermediate",
+        "slug": "state-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for State at Intermediate level. Here you will learn about Component state, setState, state updates, and lifting state up."
+      },
+      {
+        "topic_slug": "state",
+        "title": "State - Advanced",
+        "slug": "state-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for State at Advanced level. Here you will learn about Component state, setState, state updates, and lifting state up."
+      },
+      {
+        "topic_slug": "usestate-hook",
+        "title": "useState Hook - Introduction",
+        "slug": "usestate-hook-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for useState Hook at Introduction level. Here you will learn about useState for local state management, arrays, objects, and functional updates."
+      },
+      {
+        "topic_slug": "usestate-hook",
+        "title": "useState Hook - Intermediate",
+        "slug": "usestate-hook-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for useState Hook at Intermediate level. Here you will learn about useState for local state management, arrays, objects, and functional updates."
+      },
+      {
+        "topic_slug": "usestate-hook",
+        "title": "useState Hook - Advanced",
+        "slug": "usestate-hook-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for useState Hook at Advanced level. Here you will learn about useState for local state management, arrays, objects, and functional updates."
+      },
+      {
+        "topic_slug": "useeffect-hook",
+        "title": "useEffect Hook - Introduction",
+        "slug": "useeffect-hook-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for useEffect Hook at Introduction level. Here you will learn about useEffect for side effects, dependencies, cleanup, and lifecycle replacement."
+      },
+      {
+        "topic_slug": "useeffect-hook",
+        "title": "useEffect Hook - Intermediate",
+        "slug": "useeffect-hook-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for useEffect Hook at Intermediate level. Here you will learn about useEffect for side effects, dependencies, cleanup, and lifecycle replacement."
+      },
+      {
+        "topic_slug": "useeffect-hook",
+        "title": "useEffect Hook - Advanced",
+        "slug": "useeffect-hook-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for useEffect Hook at Advanced level. Here you will learn about useEffect for side effects, dependencies, cleanup, and lifecycle replacement."
+      },
+      {
+        "topic_slug": "usecontext-hook",
+        "title": "useContext Hook - Introduction",
+        "slug": "usecontext-hook-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for useContext Hook at Introduction level. Here you will learn about useContext for global state sharing, providers, and consumers."
+      },
+      {
+        "topic_slug": "usecontext-hook",
+        "title": "useContext Hook - Intermediate",
+        "slug": "usecontext-hook-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for useContext Hook at Intermediate level. Here you will learn about useContext for global state sharing, providers, and consumers."
+      },
+      {
+        "topic_slug": "usecontext-hook",
+        "title": "useContext Hook - Advanced",
+        "slug": "usecontext-hook-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for useContext Hook at Advanced level. Here you will learn about useContext for global state sharing, providers, and consumers."
+      },
+      {
+        "topic_slug": "events",
+        "title": "Events - Introduction",
+        "slug": "events-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Events at Introduction level. Here you will learn about Handling events in React, synthetic events, event delegation, and binding."
+      },
+      {
+        "topic_slug": "events",
+        "title": "Events - Intermediate",
+        "slug": "events-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Events at Intermediate level. Here you will learn about Handling events in React, synthetic events, event delegation, and binding."
+      },
+      {
+        "topic_slug": "events",
+        "title": "Events - Advanced",
+        "slug": "events-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Events at Advanced level. Here you will learn about Handling events in React, synthetic events, event delegation, and binding."
+      },
+      {
+        "topic_slug": "conditional-rendering",
+        "title": "Conditional Rendering - Introduction",
+        "slug": "conditional-rendering-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Conditional Rendering at Introduction level. Here you will learn about If statements, ternary operators, logical AND, and conditional components."
+      },
+      {
+        "topic_slug": "conditional-rendering",
+        "title": "Conditional Rendering - Intermediate",
+        "slug": "conditional-rendering-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Conditional Rendering at Intermediate level. Here you will learn about If statements, ternary operators, logical AND, and conditional components."
+      },
+      {
+        "topic_slug": "conditional-rendering",
+        "title": "Conditional Rendering - Advanced",
+        "slug": "conditional-rendering-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Conditional Rendering at Advanced level. Here you will learn about If statements, ternary operators, logical AND, and conditional components."
+      },
+      {
+        "topic_slug": "lists-and-keys",
+        "title": "Lists and Keys - Introduction",
+        "slug": "lists-and-keys-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Lists and Keys at Introduction level. Here you will learn about Rendering lists, map function, key prop importance, and list filtering."
+      },
+      {
+        "topic_slug": "lists-and-keys",
+        "title": "Lists and Keys - Intermediate",
+        "slug": "lists-and-keys-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Lists and Keys at Intermediate level. Here you will learn about Rendering lists, map function, key prop importance, and list filtering."
+      },
+      {
+        "topic_slug": "lists-and-keys",
+        "title": "Lists and Keys - Advanced",
+        "slug": "lists-and-keys-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Lists and Keys at Advanced level. Here you will learn about Rendering lists, map function, key prop importance, and list filtering."
+      },
+      {
+        "topic_slug": "forms",
+        "title": "Forms - Introduction",
+        "slug": "forms-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Forms at Introduction level. Here you will learn about Controlled vs uncontrolled components, form handling, validation, and refs."
+      },
+      {
+        "topic_slug": "forms",
+        "title": "Forms - Intermediate",
+        "slug": "forms-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Forms at Intermediate level. Here you will learn about Controlled vs uncontrolled components, form handling, validation, and refs."
+      },
+      {
+        "topic_slug": "forms",
+        "title": "Forms - Advanced",
+        "slug": "forms-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Forms at Advanced level. Here you will learn about Controlled vs uncontrolled components, form handling, validation, and refs."
+      },
+      {
+        "topic_slug": "react-router",
+        "title": "React Router - Introduction",
+        "slug": "react-router-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for React Router at Introduction level. Here you will learn about Client-side routing, BrowserRouter, Routes, Link, useParams, and navigation."
+      },
+      {
+        "topic_slug": "react-router",
+        "title": "React Router - Intermediate",
+        "slug": "react-router-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for React Router at Intermediate level. Here you will learn about Client-side routing, BrowserRouter, Routes, Link, useParams, and navigation."
+      },
+      {
+        "topic_slug": "react-router",
+        "title": "React Router - Advanced",
+        "slug": "react-router-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for React Router at Advanced level. Here you will learn about Client-side routing, BrowserRouter, Routes, Link, useParams, and navigation."
+      },
+      {
+        "topic_slug": "context-api",
+        "title": "Context API - Introduction",
+        "slug": "context-api-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Context API at Introduction level. Here you will learn about Deep context usage, multiple contexts, performance considerations, and patterns."
+      },
+      {
+        "topic_slug": "context-api",
+        "title": "Context API - Intermediate",
+        "slug": "context-api-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Context API at Intermediate level. Here you will learn about Deep context usage, multiple contexts, performance considerations, and patterns."
+      },
+      {
+        "topic_slug": "context-api",
+        "title": "Context API - Advanced",
+        "slug": "context-api-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Context API at Advanced level. Here you will learn about Deep context usage, multiple contexts, performance considerations, and patterns."
+      },
+      {
+        "topic_slug": "redux",
+        "title": "Redux - Introduction",
+        "slug": "redux-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Redux at Introduction level. Here you will learn about Redux store, actions, reducers, middleware, Redux Toolkit, and state normalization."
+      },
+      {
+        "topic_slug": "redux",
+        "title": "Redux - Intermediate",
+        "slug": "redux-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Redux at Intermediate level. Here you will learn about Redux store, actions, reducers, middleware, Redux Toolkit, and state normalization."
+      },
+      {
+        "topic_slug": "redux",
+        "title": "Redux - Advanced",
+        "slug": "redux-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Redux at Advanced level. Here you will learn about Redux store, actions, reducers, middleware, Redux Toolkit, and state normalization."
+      },
+      {
+        "topic_slug": "css-in-js",
+        "title": "CSS-in-JS - Introduction",
+        "slug": "css-in-js-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for CSS-in-JS at Introduction level. Here you will learn about Styled-components, Emotion, inline styles, CSS modules, and theming approaches."
+      },
+      {
+        "topic_slug": "css-in-js",
+        "title": "CSS-in-JS - Intermediate",
+        "slug": "css-in-js-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for CSS-in-JS at Intermediate level. Here you will learn about Styled-components, Emotion, inline styles, CSS modules, and theming approaches."
+      },
+      {
+        "topic_slug": "css-in-js",
+        "title": "CSS-in-JS - Advanced",
+        "slug": "css-in-js-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for CSS-in-JS at Advanced level. Here you will learn about Styled-components, Emotion, inline styles, CSS modules, and theming approaches."
+      }
+    ]
+  },
+  "nodejs": {
+    "category": {
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "JavaScript runtime for server-side development with non-blocking event-driven architecture",
+      "icon": "nodejs",
+      "color": "#339933"
+    },
+    "topics": [
+      {
+        "name": "Introduction to Node.js",
+        "slug": "introduction-to-node-js",
+        "difficulty": "beginner",
+        "description": "Node.js runtime, event loop, non-blocking I/O, and npm basics"
+      },
+      {
+        "name": "HTTP Module",
+        "slug": "http-module",
+        "difficulty": "beginner",
+        "description": "Creating servers, handling requests, response objects, status codes, and routing basics"
+      },
+      {
+        "name": "File System",
+        "slug": "file-system",
+        "difficulty": "beginner",
+        "description": "fs module for reading, writing, appending, deleting, and watching files"
+      },
+      {
+        "name": "URL Module",
+        "slug": "url-module",
+        "difficulty": "beginner",
+        "description": "Parsing URLs, query strings, pathname manipulation, and URL construction"
+      },
+      {
+        "name": "Events Module",
+        "slug": "events-module",
+        "difficulty": "intermediate",
+        "description": "EventEmitter, custom events, listener management, and event-driven patterns"
+      },
+      {
+        "name": "Buffers",
+        "slug": "buffers",
+        "difficulty": "intermediate",
+        "description": "Buffer creation, encoding, slicing, concatenation, and binary data handling"
+      },
+      {
+        "name": "Streams",
+        "slug": "streams",
+        "difficulty": "intermediate",
+        "description": "Readable, Writable, Duplex, Transform streams, piping, and backpressure"
+      },
+      {
+        "name": "Path Module",
+        "slug": "path-module",
+        "difficulty": "intermediate",
+        "description": "Path joining, resolving, normalization, basename, dirname, and extname"
+      },
+      {
+        "name": "Express.js",
+        "slug": "express-js",
+        "difficulty": "intermediate",
+        "description": "Express framework, middleware, routing, request/response, and error handling"
+      },
+      {
+        "name": "REST API",
+        "slug": "rest-api",
+        "difficulty": "intermediate",
+        "description": "REST principles, HTTP methods, JSON APIs, status codes, and API versioning"
+      },
+      {
+        "name": "MongoDB",
+        "slug": "mongodb",
+        "difficulty": "intermediate",
+        "description": "Mongoose, schemas, CRUD operations, aggregation, and indexing with Node.js"
+      },
+      {
+        "name": "MySQL",
+        "slug": "mysql",
+        "difficulty": "advanced",
+        "description": "mysql2, connection pooling, queries, transactions, and prepared statements in Node.js"
+      },
+      {
+        "name": "Authentication",
+        "slug": "authentication",
+        "difficulty": "advanced",
+        "description": "JWT, sessions, OAuth, bcrypt hashing, passport.js, and secure auth patterns"
+      },
+      {
+        "name": "Socket.io",
+        "slug": "socket-io",
+        "difficulty": "advanced",
+        "description": "Real-time bidirectional communication, rooms, namespaces, and event broadcasting"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "introduction-to-node-js",
+        "title": "Introduction to Node.js - Introduction",
+        "slug": "introduction-to-node-js-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Introduction to Node.js at Introduction level. Here you will learn about Node.js runtime, event loop, non-blocking I/O, and npm basics."
+      },
+      {
+        "topic_slug": "introduction-to-node-js",
+        "title": "Introduction to Node.js - Intermediate",
+        "slug": "introduction-to-node-js-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Introduction to Node.js at Intermediate level. Here you will learn about Node.js runtime, event loop, non-blocking I/O, and npm basics."
+      },
+      {
+        "topic_slug": "introduction-to-node-js",
+        "title": "Introduction to Node.js - Advanced",
+        "slug": "introduction-to-node-js-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Introduction to Node.js at Advanced level. Here you will learn about Node.js runtime, event loop, non-blocking I/O, and npm basics."
+      },
+      {
+        "topic_slug": "http-module",
+        "title": "HTTP Module - Introduction",
+        "slug": "http-module-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTTP Module at Introduction level. Here you will learn about Creating servers, handling requests, response objects, status codes, and routing basics."
+      },
+      {
+        "topic_slug": "http-module",
+        "title": "HTTP Module - Intermediate",
+        "slug": "http-module-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTTP Module at Intermediate level. Here you will learn about Creating servers, handling requests, response objects, status codes, and routing basics."
+      },
+      {
+        "topic_slug": "http-module",
+        "title": "HTTP Module - Advanced",
+        "slug": "http-module-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTTP Module at Advanced level. Here you will learn about Creating servers, handling requests, response objects, status codes, and routing basics."
+      },
+      {
+        "topic_slug": "file-system",
+        "title": "File System - Introduction",
+        "slug": "file-system-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for File System at Introduction level. Here you will learn about fs module for reading, writing, appending, deleting, and watching files."
+      },
+      {
+        "topic_slug": "file-system",
+        "title": "File System - Intermediate",
+        "slug": "file-system-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for File System at Intermediate level. Here you will learn about fs module for reading, writing, appending, deleting, and watching files."
+      },
+      {
+        "topic_slug": "file-system",
+        "title": "File System - Advanced",
+        "slug": "file-system-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for File System at Advanced level. Here you will learn about fs module for reading, writing, appending, deleting, and watching files."
+      },
+      {
+        "topic_slug": "url-module",
+        "title": "URL Module - Introduction",
+        "slug": "url-module-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for URL Module at Introduction level. Here you will learn about Parsing URLs, query strings, pathname manipulation, and URL construction."
+      },
+      {
+        "topic_slug": "url-module",
+        "title": "URL Module - Intermediate",
+        "slug": "url-module-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for URL Module at Intermediate level. Here you will learn about Parsing URLs, query strings, pathname manipulation, and URL construction."
+      },
+      {
+        "topic_slug": "url-module",
+        "title": "URL Module - Advanced",
+        "slug": "url-module-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for URL Module at Advanced level. Here you will learn about Parsing URLs, query strings, pathname manipulation, and URL construction."
+      },
+      {
+        "topic_slug": "events-module",
+        "title": "Events Module - Introduction",
+        "slug": "events-module-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Events Module at Introduction level. Here you will learn about EventEmitter, custom events, listener management, and event-driven patterns."
+      },
+      {
+        "topic_slug": "events-module",
+        "title": "Events Module - Intermediate",
+        "slug": "events-module-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Events Module at Intermediate level. Here you will learn about EventEmitter, custom events, listener management, and event-driven patterns."
+      },
+      {
+        "topic_slug": "events-module",
+        "title": "Events Module - Advanced",
+        "slug": "events-module-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Events Module at Advanced level. Here you will learn about EventEmitter, custom events, listener management, and event-driven patterns."
+      },
+      {
+        "topic_slug": "buffers",
+        "title": "Buffers - Introduction",
+        "slug": "buffers-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Buffers at Introduction level. Here you will learn about Buffer creation, encoding, slicing, concatenation, and binary data handling."
+      },
+      {
+        "topic_slug": "buffers",
+        "title": "Buffers - Intermediate",
+        "slug": "buffers-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Buffers at Intermediate level. Here you will learn about Buffer creation, encoding, slicing, concatenation, and binary data handling."
+      },
+      {
+        "topic_slug": "buffers",
+        "title": "Buffers - Advanced",
+        "slug": "buffers-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Buffers at Advanced level. Here you will learn about Buffer creation, encoding, slicing, concatenation, and binary data handling."
+      },
+      {
+        "topic_slug": "streams",
+        "title": "Streams - Introduction",
+        "slug": "streams-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Streams at Introduction level. Here you will learn about Readable, Writable, Duplex, Transform streams, piping, and backpressure."
+      },
+      {
+        "topic_slug": "streams",
+        "title": "Streams - Intermediate",
+        "slug": "streams-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Streams at Intermediate level. Here you will learn about Readable, Writable, Duplex, Transform streams, piping, and backpressure."
+      },
+      {
+        "topic_slug": "streams",
+        "title": "Streams - Advanced",
+        "slug": "streams-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Streams at Advanced level. Here you will learn about Readable, Writable, Duplex, Transform streams, piping, and backpressure."
+      },
+      {
+        "topic_slug": "path-module",
+        "title": "Path Module - Introduction",
+        "slug": "path-module-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Path Module at Introduction level. Here you will learn about Path joining, resolving, normalization, basename, dirname, and extname."
+      },
+      {
+        "topic_slug": "path-module",
+        "title": "Path Module - Intermediate",
+        "slug": "path-module-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Path Module at Intermediate level. Here you will learn about Path joining, resolving, normalization, basename, dirname, and extname."
+      },
+      {
+        "topic_slug": "path-module",
+        "title": "Path Module - Advanced",
+        "slug": "path-module-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Path Module at Advanced level. Here you will learn about Path joining, resolving, normalization, basename, dirname, and extname."
+      },
+      {
+        "topic_slug": "express-js",
+        "title": "Express.js - Introduction",
+        "slug": "express-js-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Express.js at Introduction level. Here you will learn about Express framework, middleware, routing, request/response, and error handling."
+      },
+      {
+        "topic_slug": "express-js",
+        "title": "Express.js - Intermediate",
+        "slug": "express-js-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Express.js at Intermediate level. Here you will learn about Express framework, middleware, routing, request/response, and error handling."
+      },
+      {
+        "topic_slug": "express-js",
+        "title": "Express.js - Advanced",
+        "slug": "express-js-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Express.js at Advanced level. Here you will learn about Express framework, middleware, routing, request/response, and error handling."
+      },
+      {
+        "topic_slug": "rest-api",
+        "title": "REST API - Introduction",
+        "slug": "rest-api-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for REST API at Introduction level. Here you will learn about REST principles, HTTP methods, JSON APIs, status codes, and API versioning."
+      },
+      {
+        "topic_slug": "rest-api",
+        "title": "REST API - Intermediate",
+        "slug": "rest-api-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for REST API at Intermediate level. Here you will learn about REST principles, HTTP methods, JSON APIs, status codes, and API versioning."
+      },
+      {
+        "topic_slug": "rest-api",
+        "title": "REST API - Advanced",
+        "slug": "rest-api-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for REST API at Advanced level. Here you will learn about REST principles, HTTP methods, JSON APIs, status codes, and API versioning."
+      },
+      {
+        "topic_slug": "mongodb",
+        "title": "MongoDB - Introduction",
+        "slug": "mongodb-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for MongoDB at Introduction level. Here you will learn about Mongoose, schemas, CRUD operations, aggregation, and indexing with Node.js."
+      },
+      {
+        "topic_slug": "mongodb",
+        "title": "MongoDB - Intermediate",
+        "slug": "mongodb-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for MongoDB at Intermediate level. Here you will learn about Mongoose, schemas, CRUD operations, aggregation, and indexing with Node.js."
+      },
+      {
+        "topic_slug": "mongodb",
+        "title": "MongoDB - Advanced",
+        "slug": "mongodb-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for MongoDB at Advanced level. Here you will learn about Mongoose, schemas, CRUD operations, aggregation, and indexing with Node.js."
+      },
+      {
+        "topic_slug": "mysql",
+        "title": "MySQL - Introduction",
+        "slug": "mysql-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for MySQL at Introduction level. Here you will learn about mysql2, connection pooling, queries, transactions, and prepared statements in Node.js."
+      },
+      {
+        "topic_slug": "mysql",
+        "title": "MySQL - Intermediate",
+        "slug": "mysql-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for MySQL at Intermediate level. Here you will learn about mysql2, connection pooling, queries, transactions, and prepared statements in Node.js."
+      },
+      {
+        "topic_slug": "mysql",
+        "title": "MySQL - Advanced",
+        "slug": "mysql-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for MySQL at Advanced level. Here you will learn about mysql2, connection pooling, queries, transactions, and prepared statements in Node.js."
+      },
+      {
+        "topic_slug": "authentication",
+        "title": "Authentication - Introduction",
+        "slug": "authentication-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Authentication at Introduction level. Here you will learn about JWT, sessions, OAuth, bcrypt hashing, passport.js, and secure auth patterns."
+      },
+      {
+        "topic_slug": "authentication",
+        "title": "Authentication - Intermediate",
+        "slug": "authentication-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Authentication at Intermediate level. Here you will learn about JWT, sessions, OAuth, bcrypt hashing, passport.js, and secure auth patterns."
+      },
+      {
+        "topic_slug": "authentication",
+        "title": "Authentication - Advanced",
+        "slug": "authentication-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Authentication at Advanced level. Here you will learn about JWT, sessions, OAuth, bcrypt hashing, passport.js, and secure auth patterns."
+      },
+      {
+        "topic_slug": "socket-io",
+        "title": "Socket.io - Introduction",
+        "slug": "socket-io-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Socket.io at Introduction level. Here you will learn about Real-time bidirectional communication, rooms, namespaces, and event broadcasting."
+      },
+      {
+        "topic_slug": "socket-io",
+        "title": "Socket.io - Intermediate",
+        "slug": "socket-io-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Socket.io at Intermediate level. Here you will learn about Real-time bidirectional communication, rooms, namespaces, and event broadcasting."
+      },
+      {
+        "topic_slug": "socket-io",
+        "title": "Socket.io - Advanced",
+        "slug": "socket-io-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Socket.io at Advanced level. Here you will learn about Real-time bidirectional communication, rooms, namespaces, and event broadcasting."
+      }
+    ]
+  },
+  "data-structures": {
+    "category": {
+      "name": "Data Structures",
+      "slug": "data-structures",
+      "description": "Essential data structures for organizing and managing data efficiently in algorithms",
+      "icon": "database",
+      "color": "#F59E0B"
+    },
+    "topics": [
+      {
+        "name": "Arrays",
+        "slug": "arrays",
+        "difficulty": "beginner",
+        "description": "Array fundamentals, dynamic arrays, multi-dimensional arrays, and common operations"
+      },
+      {
+        "name": "Linked Lists",
+        "slug": "linked-lists",
+        "difficulty": "beginner",
+        "description": "Singly linked lists, doubly linked lists, circular lists, insertion and deletion"
+      },
+      {
+        "name": "Stacks",
+        "slug": "stacks",
+        "difficulty": "intermediate",
+        "description": "Stack operations, LIFO principle, array-based and linked-list-based implementations"
+      },
+      {
+        "name": "Queues",
+        "slug": "queues",
+        "difficulty": "intermediate",
+        "description": "Queue operations, FIFO principle, circular queues, priority queues, and deque"
+      },
+      {
+        "name": "Trees",
+        "slug": "trees",
+        "difficulty": "intermediate",
+        "description": "Binary trees, BST, tree traversals, height, balanced trees, and AVL basics"
+      },
+      {
+        "name": "Heaps",
+        "slug": "heaps",
+        "difficulty": "intermediate",
+        "description": "Min-heap, max-heap, heapify, heap sort, priority queues, and applications"
+      },
+      {
+        "name": "Graphs",
+        "slug": "graphs",
+        "difficulty": "advanced",
+        "description": "Graph representations, adjacency matrix/list, BFS, DFS, weighted and directed graphs"
+      },
+      {
+        "name": "Hash Tables",
+        "slug": "hash-tables",
+        "difficulty": "advanced",
+        "description": "Hash functions, collision resolution, chaining, open addressing, and rehashing"
+      },
+      {
+        "name": "Tries",
+        "slug": "tries",
+        "difficulty": "advanced",
+        "description": "Trie structure, prefix matching, auto-complete, and suffix trees"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "arrays",
+        "title": "Arrays - Introduction",
+        "slug": "arrays-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Arrays at Introduction level. Here you will learn about Array fundamentals, dynamic arrays, multi-dimensional arrays, and common operations."
+      },
+      {
+        "topic_slug": "arrays",
+        "title": "Arrays - Intermediate",
+        "slug": "arrays-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Arrays at Intermediate level. Here you will learn about Array fundamentals, dynamic arrays, multi-dimensional arrays, and common operations."
+      },
+      {
+        "topic_slug": "arrays",
+        "title": "Arrays - Advanced",
+        "slug": "arrays-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Arrays at Advanced level. Here you will learn about Array fundamentals, dynamic arrays, multi-dimensional arrays, and common operations."
+      },
+      {
+        "topic_slug": "linked-lists",
+        "title": "Linked Lists - Introduction",
+        "slug": "linked-lists-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Linked Lists at Introduction level. Here you will learn about Singly linked lists, doubly linked lists, circular lists, insertion and deletion."
+      },
+      {
+        "topic_slug": "linked-lists",
+        "title": "Linked Lists - Intermediate",
+        "slug": "linked-lists-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Linked Lists at Intermediate level. Here you will learn about Singly linked lists, doubly linked lists, circular lists, insertion and deletion."
+      },
+      {
+        "topic_slug": "linked-lists",
+        "title": "Linked Lists - Advanced",
+        "slug": "linked-lists-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Linked Lists at Advanced level. Here you will learn about Singly linked lists, doubly linked lists, circular lists, insertion and deletion."
+      },
+      {
+        "topic_slug": "stacks",
+        "title": "Stacks - Introduction",
+        "slug": "stacks-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Stacks at Introduction level. Here you will learn about Stack operations, LIFO principle, array-based and linked-list-based implementations."
+      },
+      {
+        "topic_slug": "stacks",
+        "title": "Stacks - Intermediate",
+        "slug": "stacks-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Stacks at Intermediate level. Here you will learn about Stack operations, LIFO principle, array-based and linked-list-based implementations."
+      },
+      {
+        "topic_slug": "stacks",
+        "title": "Stacks - Advanced",
+        "slug": "stacks-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Stacks at Advanced level. Here you will learn about Stack operations, LIFO principle, array-based and linked-list-based implementations."
+      },
+      {
+        "topic_slug": "queues",
+        "title": "Queues - Introduction",
+        "slug": "queues-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Queues at Introduction level. Here you will learn about Queue operations, FIFO principle, circular queues, priority queues, and deque."
+      },
+      {
+        "topic_slug": "queues",
+        "title": "Queues - Intermediate",
+        "slug": "queues-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Queues at Intermediate level. Here you will learn about Queue operations, FIFO principle, circular queues, priority queues, and deque."
+      },
+      {
+        "topic_slug": "queues",
+        "title": "Queues - Advanced",
+        "slug": "queues-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Queues at Advanced level. Here you will learn about Queue operations, FIFO principle, circular queues, priority queues, and deque."
+      },
+      {
+        "topic_slug": "trees",
+        "title": "Trees - Introduction",
+        "slug": "trees-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Trees at Introduction level. Here you will learn about Binary trees, BST, tree traversals, height, balanced trees, and AVL basics."
+      },
+      {
+        "topic_slug": "trees",
+        "title": "Trees - Intermediate",
+        "slug": "trees-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Trees at Intermediate level. Here you will learn about Binary trees, BST, tree traversals, height, balanced trees, and AVL basics."
+      },
+      {
+        "topic_slug": "trees",
+        "title": "Trees - Advanced",
+        "slug": "trees-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Trees at Advanced level. Here you will learn about Binary trees, BST, tree traversals, height, balanced trees, and AVL basics."
+      },
+      {
+        "topic_slug": "heaps",
+        "title": "Heaps - Introduction",
+        "slug": "heaps-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Heaps at Introduction level. Here you will learn about Min-heap, max-heap, heapify, heap sort, priority queues, and applications."
+      },
+      {
+        "topic_slug": "heaps",
+        "title": "Heaps - Intermediate",
+        "slug": "heaps-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Heaps at Intermediate level. Here you will learn about Min-heap, max-heap, heapify, heap sort, priority queues, and applications."
+      },
+      {
+        "topic_slug": "heaps",
+        "title": "Heaps - Advanced",
+        "slug": "heaps-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Heaps at Advanced level. Here you will learn about Min-heap, max-heap, heapify, heap sort, priority queues, and applications."
+      },
+      {
+        "topic_slug": "graphs",
+        "title": "Graphs - Introduction",
+        "slug": "graphs-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Graphs at Introduction level. Here you will learn about Graph representations, adjacency matrix/list, BFS, DFS, weighted and directed graphs."
+      },
+      {
+        "topic_slug": "graphs",
+        "title": "Graphs - Intermediate",
+        "slug": "graphs-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Graphs at Intermediate level. Here you will learn about Graph representations, adjacency matrix/list, BFS, DFS, weighted and directed graphs."
+      },
+      {
+        "topic_slug": "graphs",
+        "title": "Graphs - Advanced",
+        "slug": "graphs-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Graphs at Advanced level. Here you will learn about Graph representations, adjacency matrix/list, BFS, DFS, weighted and directed graphs."
+      },
+      {
+        "topic_slug": "hash-tables",
+        "title": "Hash Tables - Introduction",
+        "slug": "hash-tables-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Hash Tables at Introduction level. Here you will learn about Hash functions, collision resolution, chaining, open addressing, and rehashing."
+      },
+      {
+        "topic_slug": "hash-tables",
+        "title": "Hash Tables - Intermediate",
+        "slug": "hash-tables-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Hash Tables at Intermediate level. Here you will learn about Hash functions, collision resolution, chaining, open addressing, and rehashing."
+      },
+      {
+        "topic_slug": "hash-tables",
+        "title": "Hash Tables - Advanced",
+        "slug": "hash-tables-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Hash Tables at Advanced level. Here you will learn about Hash functions, collision resolution, chaining, open addressing, and rehashing."
+      },
+      {
+        "topic_slug": "tries",
+        "title": "Tries - Introduction",
+        "slug": "tries-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Tries at Introduction level. Here you will learn about Trie structure, prefix matching, auto-complete, and suffix trees."
+      },
+      {
+        "topic_slug": "tries",
+        "title": "Tries - Intermediate",
+        "slug": "tries-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Tries at Intermediate level. Here you will learn about Trie structure, prefix matching, auto-complete, and suffix trees."
+      },
+      {
+        "topic_slug": "tries",
+        "title": "Tries - Advanced",
+        "slug": "tries-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Tries at Advanced level. Here you will learn about Trie structure, prefix matching, auto-complete, and suffix trees."
+      }
+    ]
+  },
+  "algorithms": {
+    "category": {
+      "name": "Algorithms",
+      "slug": "algorithms",
+      "description": "Core algorithms for problem solving including sorting, searching, recursion, dynamic programming, and graph algorithms",
+      "icon": "algorithm",
+      "color": "#8B5CF6"
+    },
+    "topics": [
+      {
+        "name": "Sorting",
+        "slug": "sorting",
+        "difficulty": "beginner",
+        "description": "Bubble, selection, insertion, merge, quick, and heap sort algorithms and complexity"
+      },
+      {
+        "name": "Searching",
+        "slug": "searching",
+        "difficulty": "beginner",
+        "description": "Linear search, binary search, search in sorted/rotated arrays, and lower/upper bound"
+      },
+      {
+        "name": "Recursion",
+        "slug": "recursion",
+        "difficulty": "intermediate",
+        "description": "Recursion basics, base cases, recursive thinking, tail recursion, and common patterns"
+      },
+      {
+        "name": "Dynamic Programming",
+        "slug": "dynamic-programming",
+        "difficulty": "intermediate",
+        "description": "Memoization, tabulation, overlapping subproblems, optimal substructure, and classic DP problems"
+      },
+      {
+        "name": "Greedy Algorithms",
+        "slug": "greedy-algorithms",
+        "difficulty": "intermediate",
+        "description": "Greedy choice property, activity selection, Huffman coding, and fractional knapsack"
+      },
+      {
+        "name": "Backtracking",
+        "slug": "backtracking",
+        "difficulty": "advanced",
+        "description": "Backtracking paradigm, N-Queens, permutations, subsets, and pruning strategies"
+      },
+      {
+        "name": "Divide and Conquer",
+        "slug": "divide-and-conquer",
+        "difficulty": "advanced",
+        "description": "Divide, conquer, combine paradigm, merge sort, quick sort, binary search, and closest pair"
+      },
+      {
+        "name": "Graph Algorithms",
+        "slug": "graph-algorithms",
+        "difficulty": "advanced",
+        "description": "Dijkstra, Bellman-Ford, Floyd-Warshall, MST via Prim/Kruskal, topological sort, and strongly connected components"
+      },
+      {
+        "name": "String Algorithms",
+        "slug": "string-algorithms",
+        "difficulty": "advanced",
+        "description": "KMP, Rabin-Karp, Z-algorithm, string matching, longest common subsequence, and edit distance"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "sorting",
+        "title": "Sorting - Introduction",
+        "slug": "sorting-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Sorting at Introduction level. Here you will learn about Bubble, selection, insertion, merge, quick, and heap sort algorithms and complexity."
+      },
+      {
+        "topic_slug": "sorting",
+        "title": "Sorting - Intermediate",
+        "slug": "sorting-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Sorting at Intermediate level. Here you will learn about Bubble, selection, insertion, merge, quick, and heap sort algorithms and complexity."
+      },
+      {
+        "topic_slug": "sorting",
+        "title": "Sorting - Advanced",
+        "slug": "sorting-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Sorting at Advanced level. Here you will learn about Bubble, selection, insertion, merge, quick, and heap sort algorithms and complexity."
+      },
+      {
+        "topic_slug": "searching",
+        "title": "Searching - Introduction",
+        "slug": "searching-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Searching at Introduction level. Here you will learn about Linear search, binary search, search in sorted/rotated arrays, and lower/upper bound."
+      },
+      {
+        "topic_slug": "searching",
+        "title": "Searching - Intermediate",
+        "slug": "searching-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Searching at Intermediate level. Here you will learn about Linear search, binary search, search in sorted/rotated arrays, and lower/upper bound."
+      },
+      {
+        "topic_slug": "searching",
+        "title": "Searching - Advanced",
+        "slug": "searching-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Searching at Advanced level. Here you will learn about Linear search, binary search, search in sorted/rotated arrays, and lower/upper bound."
+      },
+      {
+        "topic_slug": "recursion",
+        "title": "Recursion - Introduction",
+        "slug": "recursion-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Recursion at Introduction level. Here you will learn about Recursion basics, base cases, recursive thinking, tail recursion, and common patterns."
+      },
+      {
+        "topic_slug": "recursion",
+        "title": "Recursion - Intermediate",
+        "slug": "recursion-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Recursion at Intermediate level. Here you will learn about Recursion basics, base cases, recursive thinking, tail recursion, and common patterns."
+      },
+      {
+        "topic_slug": "recursion",
+        "title": "Recursion - Advanced",
+        "slug": "recursion-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Recursion at Advanced level. Here you will learn about Recursion basics, base cases, recursive thinking, tail recursion, and common patterns."
+      },
+      {
+        "topic_slug": "dynamic-programming",
+        "title": "Dynamic Programming - Introduction",
+        "slug": "dynamic-programming-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Dynamic Programming at Introduction level. Here you will learn about Memoization, tabulation, overlapping subproblems, optimal substructure, and classic DP problems."
+      },
+      {
+        "topic_slug": "dynamic-programming",
+        "title": "Dynamic Programming - Intermediate",
+        "slug": "dynamic-programming-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Dynamic Programming at Intermediate level. Here you will learn about Memoization, tabulation, overlapping subproblems, optimal substructure, and classic DP problems."
+      },
+      {
+        "topic_slug": "dynamic-programming",
+        "title": "Dynamic Programming - Advanced",
+        "slug": "dynamic-programming-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Dynamic Programming at Advanced level. Here you will learn about Memoization, tabulation, overlapping subproblems, optimal substructure, and classic DP problems."
+      },
+      {
+        "topic_slug": "greedy-algorithms",
+        "title": "Greedy Algorithms - Introduction",
+        "slug": "greedy-algorithms-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Greedy Algorithms at Introduction level. Here you will learn about Greedy choice property, activity selection, Huffman coding, and fractional knapsack."
+      },
+      {
+        "topic_slug": "greedy-algorithms",
+        "title": "Greedy Algorithms - Intermediate",
+        "slug": "greedy-algorithms-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Greedy Algorithms at Intermediate level. Here you will learn about Greedy choice property, activity selection, Huffman coding, and fractional knapsack."
+      },
+      {
+        "topic_slug": "greedy-algorithms",
+        "title": "Greedy Algorithms - Advanced",
+        "slug": "greedy-algorithms-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Greedy Algorithms at Advanced level. Here you will learn about Greedy choice property, activity selection, Huffman coding, and fractional knapsack."
+      },
+      {
+        "topic_slug": "backtracking",
+        "title": "Backtracking - Introduction",
+        "slug": "backtracking-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Backtracking at Introduction level. Here you will learn about Backtracking paradigm, N-Queens, permutations, subsets, and pruning strategies."
+      },
+      {
+        "topic_slug": "backtracking",
+        "title": "Backtracking - Intermediate",
+        "slug": "backtracking-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Backtracking at Intermediate level. Here you will learn about Backtracking paradigm, N-Queens, permutations, subsets, and pruning strategies."
+      },
+      {
+        "topic_slug": "backtracking",
+        "title": "Backtracking - Advanced",
+        "slug": "backtracking-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Backtracking at Advanced level. Here you will learn about Backtracking paradigm, N-Queens, permutations, subsets, and pruning strategies."
+      },
+      {
+        "topic_slug": "divide-and-conquer",
+        "title": "Divide and Conquer - Introduction",
+        "slug": "divide-and-conquer-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Divide and Conquer at Introduction level. Here you will learn about Divide, conquer, combine paradigm, merge sort, quick sort, binary search, and closest pair."
+      },
+      {
+        "topic_slug": "divide-and-conquer",
+        "title": "Divide and Conquer - Intermediate",
+        "slug": "divide-and-conquer-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Divide and Conquer at Intermediate level. Here you will learn about Divide, conquer, combine paradigm, merge sort, quick sort, binary search, and closest pair."
+      },
+      {
+        "topic_slug": "divide-and-conquer",
+        "title": "Divide and Conquer - Advanced",
+        "slug": "divide-and-conquer-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Divide and Conquer at Advanced level. Here you will learn about Divide, conquer, combine paradigm, merge sort, quick sort, binary search, and closest pair."
+      },
+      {
+        "topic_slug": "graph-algorithms",
+        "title": "Graph Algorithms - Introduction",
+        "slug": "graph-algorithms-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Graph Algorithms at Introduction level. Here you will learn about Dijkstra, Bellman-Ford, Floyd-Warshall, MST via Prim/Kruskal, topological sort, and strongly connected components."
+      },
+      {
+        "topic_slug": "graph-algorithms",
+        "title": "Graph Algorithms - Intermediate",
+        "slug": "graph-algorithms-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Graph Algorithms at Intermediate level. Here you will learn about Dijkstra, Bellman-Ford, Floyd-Warshall, MST via Prim/Kruskal, topological sort, and strongly connected components."
+      },
+      {
+        "topic_slug": "graph-algorithms",
+        "title": "Graph Algorithms - Advanced",
+        "slug": "graph-algorithms-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Graph Algorithms at Advanced level. Here you will learn about Dijkstra, Bellman-Ford, Floyd-Warshall, MST via Prim/Kruskal, topological sort, and strongly connected components."
+      },
+      {
+        "topic_slug": "string-algorithms",
+        "title": "String Algorithms - Introduction",
+        "slug": "string-algorithms-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for String Algorithms at Introduction level. Here you will learn about KMP, Rabin-Karp, Z-algorithm, string matching, longest common subsequence, and edit distance."
+      },
+      {
+        "topic_slug": "string-algorithms",
+        "title": "String Algorithms - Intermediate",
+        "slug": "string-algorithms-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for String Algorithms at Intermediate level. Here you will learn about KMP, Rabin-Karp, Z-algorithm, string matching, longest common subsequence, and edit distance."
+      },
+      {
+        "topic_slug": "string-algorithms",
+        "title": "String Algorithms - Advanced",
+        "slug": "string-algorithms-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for String Algorithms at Advanced level. Here you will learn about KMP, Rabin-Karp, Z-algorithm, string matching, longest common subsequence, and edit distance."
+      }
+    ]
+  },
+  "system-design": {
+    "category": {
+      "name": "System Design",
+      "slug": "system-design",
+      "description": "Designing scalable, reliable, and maintainable software systems for production environments",
+      "icon": "server",
+      "color": "#EF4444"
+    },
+    "topics": [
+      {
+        "name": "Scalability",
+        "slug": "scalability",
+        "difficulty": "intermediate",
+        "description": "Horizontal vs vertical scaling, sharding, replication, database scaling, and capacity planning"
+      },
+      {
+        "name": "CAP Theorem",
+        "slug": "cap-theorem",
+        "difficulty": "beginner",
+        "description": "Consistency, availability, partition tolerance, trade-offs, and real-world implications"
+      },
+      {
+        "name": "Databases",
+        "slug": "databases",
+        "difficulty": "intermediate",
+        "description": "SQL vs NoSQL, indexing, normalization, denormalization, ACID, and database selection"
+      },
+      {
+        "name": "Caching",
+        "slug": "caching",
+        "difficulty": "intermediate",
+        "description": "Cache strategies, LRU/LFU, Redis, Memcached, cache invalidation, and distributed caching"
+      },
+      {
+        "name": "Message Queues",
+        "slug": "message-queues",
+        "difficulty": "intermediate",
+        "description": "Pub/sub, Kafka, RabbitMQ, SQS, message ordering, durability, and backpressure"
+      },
+      {
+        "name": "Microservices",
+        "slug": "microservices",
+        "difficulty": "advanced",
+        "description": "Service boundaries, inter-service communication, service discovery, circuit breakers, and API gateways"
+      },
+      {
+        "name": "CDN",
+        "slug": "cdn",
+        "difficulty": "advanced",
+        "description": "Content delivery networks, edge caching, origin pull, cache hit/miss, and geographic distribution"
+      },
+      {
+        "name": "Load Balancing",
+        "slug": "load-balancing",
+        "difficulty": "advanced",
+        "description": "Layer 4/7 load balancing, algorithms like round-robin and least connections, health checks, and sticky sessions"
+      },
+      {
+        "name": "API Design",
+        "slug": "api-design",
+        "difficulty": "advanced",
+        "description": "RESTful best practices, versioning, idempotency, rate limiting, pagination, and error handling"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "scalability",
+        "title": "Scalability - Introduction",
+        "slug": "scalability-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Scalability at Introduction level. Here you will learn about Horizontal vs vertical scaling, sharding, replication, database scaling, and capacity planning."
+      },
+      {
+        "topic_slug": "scalability",
+        "title": "Scalability - Intermediate",
+        "slug": "scalability-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Scalability at Intermediate level. Here you will learn about Horizontal vs vertical scaling, sharding, replication, database scaling, and capacity planning."
+      },
+      {
+        "topic_slug": "scalability",
+        "title": "Scalability - Advanced",
+        "slug": "scalability-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Scalability at Advanced level. Here you will learn about Horizontal vs vertical scaling, sharding, replication, database scaling, and capacity planning."
+      },
+      {
+        "topic_slug": "cap-theorem",
+        "title": "CAP Theorem - Introduction",
+        "slug": "cap-theorem-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for CAP Theorem at Introduction level. Here you will learn about Consistency, availability, partition tolerance, trade-offs, and real-world implications."
+      },
+      {
+        "topic_slug": "cap-theorem",
+        "title": "CAP Theorem - Intermediate",
+        "slug": "cap-theorem-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for CAP Theorem at Intermediate level. Here you will learn about Consistency, availability, partition tolerance, trade-offs, and real-world implications."
+      },
+      {
+        "topic_slug": "cap-theorem",
+        "title": "CAP Theorem - Advanced",
+        "slug": "cap-theorem-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for CAP Theorem at Advanced level. Here you will learn about Consistency, availability, partition tolerance, trade-offs, and real-world implications."
+      },
+      {
+        "topic_slug": "databases",
+        "title": "Databases - Introduction",
+        "slug": "databases-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Databases at Introduction level. Here you will learn about SQL vs NoSQL, indexing, normalization, denormalization, ACID, and database selection."
+      },
+      {
+        "topic_slug": "databases",
+        "title": "Databases - Intermediate",
+        "slug": "databases-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Databases at Intermediate level. Here you will learn about SQL vs NoSQL, indexing, normalization, denormalization, ACID, and database selection."
+      },
+      {
+        "topic_slug": "databases",
+        "title": "Databases - Advanced",
+        "slug": "databases-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Databases at Advanced level. Here you will learn about SQL vs NoSQL, indexing, normalization, denormalization, ACID, and database selection."
+      },
+      {
+        "topic_slug": "caching",
+        "title": "Caching - Introduction",
+        "slug": "caching-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Caching at Introduction level. Here you will learn about Cache strategies, LRU/LFU, Redis, Memcached, cache invalidation, and distributed caching."
+      },
+      {
+        "topic_slug": "caching",
+        "title": "Caching - Intermediate",
+        "slug": "caching-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Caching at Intermediate level. Here you will learn about Cache strategies, LRU/LFU, Redis, Memcached, cache invalidation, and distributed caching."
+      },
+      {
+        "topic_slug": "caching",
+        "title": "Caching - Advanced",
+        "slug": "caching-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Caching at Advanced level. Here you will learn about Cache strategies, LRU/LFU, Redis, Memcached, cache invalidation, and distributed caching."
+      },
+      {
+        "topic_slug": "message-queues",
+        "title": "Message Queues - Introduction",
+        "slug": "message-queues-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Message Queues at Introduction level. Here you will learn about Pub/sub, Kafka, RabbitMQ, SQS, message ordering, durability, and backpressure."
+      },
+      {
+        "topic_slug": "message-queues",
+        "title": "Message Queues - Intermediate",
+        "slug": "message-queues-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Message Queues at Intermediate level. Here you will learn about Pub/sub, Kafka, RabbitMQ, SQS, message ordering, durability, and backpressure."
+      },
+      {
+        "topic_slug": "message-queues",
+        "title": "Message Queues - Advanced",
+        "slug": "message-queues-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Message Queues at Advanced level. Here you will learn about Pub/sub, Kafka, RabbitMQ, SQS, message ordering, durability, and backpressure."
+      },
+      {
+        "topic_slug": "microservices",
+        "title": "Microservices - Introduction",
+        "slug": "microservices-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Microservices at Introduction level. Here you will learn about Service boundaries, inter-service communication, service discovery, circuit breakers, and API gateways."
+      },
+      {
+        "topic_slug": "microservices",
+        "title": "Microservices - Intermediate",
+        "slug": "microservices-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Microservices at Intermediate level. Here you will learn about Service boundaries, inter-service communication, service discovery, circuit breakers, and API gateways."
+      },
+      {
+        "topic_slug": "microservices",
+        "title": "Microservices - Advanced",
+        "slug": "microservices-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Microservices at Advanced level. Here you will learn about Service boundaries, inter-service communication, service discovery, circuit breakers, and API gateways."
+      },
+      {
+        "topic_slug": "cdn",
+        "title": "CDN - Introduction",
+        "slug": "cdn-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for CDN at Introduction level. Here you will learn about Content delivery networks, edge caching, origin pull, cache hit/miss, and geographic distribution."
+      },
+      {
+        "topic_slug": "cdn",
+        "title": "CDN - Intermediate",
+        "slug": "cdn-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for CDN at Intermediate level. Here you will learn about Content delivery networks, edge caching, origin pull, cache hit/miss, and geographic distribution."
+      },
+      {
+        "topic_slug": "cdn",
+        "title": "CDN - Advanced",
+        "slug": "cdn-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for CDN at Advanced level. Here you will learn about Content delivery networks, edge caching, origin pull, cache hit/miss, and geographic distribution."
+      },
+      {
+        "topic_slug": "load-balancing",
+        "title": "Load Balancing - Introduction",
+        "slug": "load-balancing-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for Load Balancing at Introduction level. Here you will learn about Layer 4/7 load balancing, algorithms like round-robin and least connections, health checks, and sticky sessions."
+      },
+      {
+        "topic_slug": "load-balancing",
+        "title": "Load Balancing - Intermediate",
+        "slug": "load-balancing-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for Load Balancing at Intermediate level. Here you will learn about Layer 4/7 load balancing, algorithms like round-robin and least connections, health checks, and sticky sessions."
+      },
+      {
+        "topic_slug": "load-balancing",
+        "title": "Load Balancing - Advanced",
+        "slug": "load-balancing-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for Load Balancing at Advanced level. Here you will learn about Layer 4/7 load balancing, algorithms like round-robin and least connections, health checks, and sticky sessions."
+      },
+      {
+        "topic_slug": "api-design",
+        "title": "API Design - Introduction",
+        "slug": "api-design-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for API Design at Introduction level. Here you will learn about RESTful best practices, versioning, idempotency, rate limiting, pagination, and error handling."
+      },
+      {
+        "topic_slug": "api-design",
+        "title": "API Design - Intermediate",
+        "slug": "api-design-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for API Design at Intermediate level. Here you will learn about RESTful best practices, versioning, idempotency, rate limiting, pagination, and error handling."
+      },
+      {
+        "topic_slug": "api-design",
+        "title": "API Design - Advanced",
+        "slug": "api-design-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for API Design at Advanced level. Here you will learn about RESTful best practices, versioning, idempotency, rate limiting, pagination, and error handling."
+      }
+    ]
+  }
+}
