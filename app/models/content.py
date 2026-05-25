@@ -118,7 +118,7 @@ class Lesson(Base):
 
     def to_detail_dict(self):
         d = self.to_dict()
-        d["content"] = self.content_json
+        d["content_blocks"] = self.content_json.get("blocks", []) if isinstance(self.content_json, dict) else self.content_json
         d["code_examples"] = [ex.to_dict() for ex in self.code_examples]
         d["exercises"] = [ex.to_dict() for ex in self.exercises] if self.exercises else []
         return d
