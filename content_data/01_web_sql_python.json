@@ -1,0 +1,720 @@
+{
+  "categories": [
+    {
+      "name": "HTML",
+      "slug": "html",
+      "description": "Learn HTML: elements, forms, media, semantic markup, accessibility, HTML5.",
+      "icon": "html5",
+      "color": "#E34F26"
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "description": "Master CSS: selectors, box model, flexbox, grid, animations, responsive design.",
+      "icon": "css3",
+      "color": "#1572B6"
+    },
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "description": "Add interactivity: variables, functions, DOM, events, async, ES6+.",
+      "icon": "javascript",
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "Python",
+      "slug": "python",
+      "description": "Master Python: types, control flow, functions, OOP, files, modules.",
+      "icon": "python",
+      "color": "#3776AB"
+    },
+    {
+      "name": "SQL",
+      "slug": "sql",
+      "description": "Query databases: SELECT, JOINs, aggregates, subqueries, optimization.",
+      "icon": "database",
+      "color": "#336791"
+    }
+  ],
+  "topics": [
+    {
+      "name": "HTML Basics",
+      "slug": "html-b",
+      "description": "HTML HTML Basics",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Document Structure",
+      "slug": "html-doc",
+      "description": "HTML Document Structure",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Text Elements",
+      "slug": "html-text",
+      "description": "HTML Text Elements",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Links",
+      "slug": "html-link",
+      "description": "HTML Links",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Images",
+      "slug": "html-img",
+      "description": "HTML Images",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Lists",
+      "slug": "html-list",
+      "description": "HTML Lists",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Tables",
+      "slug": "html-table",
+      "description": "HTML Tables",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Forms",
+      "slug": "html-form",
+      "description": "HTML Forms",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Form Inputs",
+      "slug": "html-input",
+      "description": "HTML Form Inputs",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Semantic HTML",
+      "slug": "html-sem",
+      "description": "HTML Semantic HTML",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "HTML5 Features",
+      "slug": "html5",
+      "description": "HTML HTML5 Features",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Metadata",
+      "slug": "html-meta",
+      "description": "HTML Metadata",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Accessibility",
+      "slug": "html-a11y",
+      "description": "HTML Accessibility",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Multimedia",
+      "slug": "html-media",
+      "description": "HTML Multimedia",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Iframes",
+      "slug": "html-iframe",
+      "description": "HTML Iframes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Data Attributes",
+      "slug": "html-data",
+      "description": "HTML Data Attributes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Entities",
+      "slug": "html-ent",
+      "description": "HTML Entities",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Canvas",
+      "slug": "html-canvas",
+      "description": "HTML Canvas",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "SVG",
+      "slug": "html-svg",
+      "description": "HTML SVG",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Best Practices",
+      "slug": "html-best",
+      "description": "HTML Best Practices",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "CSS Basics",
+      "slug": "css-base",
+      "description": "CSS CSS Basics",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Selectors",
+      "slug": "css-sel",
+      "description": "CSS Selectors",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Colors",
+      "slug": "css-color",
+      "description": "CSS Colors",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Typography",
+      "slug": "css-type",
+      "description": "CSS Typography",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Box Model",
+      "slug": "css-box",
+      "description": "CSS Box Model",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Display",
+      "slug": "css-disp",
+      "description": "CSS Display",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Positioning",
+      "slug": "css-pos",
+      "description": "CSS Positioning",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Float",
+      "slug": "css-float",
+      "description": "CSS Float",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Flexbox",
+      "slug": "css-flex",
+      "description": "CSS Flexbox",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "CSS Grid",
+      "slug": "css-grid",
+      "description": "CSS CSS Grid",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Responsive",
+      "slug": "css-resp",
+      "description": "CSS Responsive",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Media Queries",
+      "slug": "css-media",
+      "description": "CSS Media Queries",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Transitions",
+      "slug": "css-trans",
+      "description": "CSS Transitions",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Animations",
+      "slug": "css-anim",
+      "description": "CSS Animations",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Transforms",
+      "slug": "css-transform",
+      "description": "CSS Transforms",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Variables",
+      "slug": "css-var",
+      "description": "CSS Variables",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Pseudo-classes",
+      "slug": "css-ps",
+      "description": "CSS Pseudo-classes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Pseudo-elements",
+      "slug": "css-pe",
+      "description": "CSS Pseudo-elements",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Specificity",
+      "slug": "css-spec",
+      "description": "CSS Specificity",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Combinators",
+      "slug": "css-combo",
+      "description": "CSS Combinators",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Functions",
+      "slug": "css-func",
+      "description": "CSS Functions",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Best Practices",
+      "slug": "css-best",
+      "description": "CSS Best Practices",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "JS Basics",
+      "slug": "js-base",
+      "description": "JS JS Basics",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Variables",
+      "slug": "js-var",
+      "description": "JS Variables",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Data Types",
+      "slug": "js-type",
+      "description": "JS Data Types",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Operators",
+      "slug": "js-op",
+      "description": "JS Operators",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Strings",
+      "slug": "js-str",
+      "description": "JS Strings",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Numbers",
+      "slug": "js-num",
+      "description": "JS Numbers",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Control Flow",
+      "slug": "js-ctrl",
+      "description": "JS Control Flow",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Loops",
+      "slug": "js-loop",
+      "description": "JS Loops",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Functions",
+      "slug": "js-func",
+      "description": "JS Functions",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Arrays",
+      "slug": "js-arr",
+      "description": "JS Arrays",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Objects",
+      "slug": "js-obj",
+      "description": "JS Objects",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "DOM Basics",
+      "slug": "js-dom",
+      "description": "JS DOM Basics",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Events",
+      "slug": "js-event",
+      "description": "JS Events",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "ES6+ ",
+      "slug": "js-es6",
+      "description": "JS ES6+ ",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Promises",
+      "slug": "js-prom",
+      "description": "JS Promises",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Async Await",
+      "slug": "js-async",
+      "description": "JS Async Await",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Fetch API",
+      "slug": "js-fetch",
+      "description": "JS Fetch API",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Modules",
+      "slug": "js-mod",
+      "description": "JS Modules",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Error Handling",
+      "slug": "js-err",
+      "description": "JS Error Handling",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Local Storage",
+      "slug": "js-store",
+      "description": "JS Local Storage",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "RegEx",
+      "slug": "js-regex",
+      "description": "JS RegEx",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Classes",
+      "slug": "js-class",
+      "description": "JS Classes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "JSON",
+      "slug": "js-json",
+      "description": "JS JSON",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Scope",
+      "slug": "js-scope",
+      "description": "JS Scope",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Best Practices",
+      "slug": "js-best",
+      "description": "JS Best Practices",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "DOM Advanced",
+      "slug": "js-dom2",
+      "description": "JS DOM Advanced",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Python Basics",
+      "slug": "py-base",
+      "description": "PY Python Basics",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Variables",
+      "slug": "py-var",
+      "description": "PY Variables",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Data Types",
+      "slug": "py-type",
+      "description": "PY Data Types",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Strings",
+      "slug": "py-str",
+      "description": "PY Strings",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Numbers",
+      "slug": "py-num",
+      "description": "PY Numbers",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Control Flow",
+      "slug": "py-ctrl",
+      "description": "PY Control Flow",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Loops",
+      "slug": "py-loop",
+      "description": "PY Loops",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Functions",
+      "slug": "py-func",
+      "description": "PY Functions",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Lists",
+      "slug": "py-list",
+      "description": "PY Lists",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Dictionaries",
+      "slug": "py-dict",
+      "description": "PY Dictionaries",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Tuples Sets",
+      "slug": "py-tuple",
+      "description": "PY Tuples Sets",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Comprehensions",
+      "slug": "py-comp",
+      "description": "PY Comprehensions",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "OOP",
+      "slug": "py-oop",
+      "description": "PY OOP",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Classes",
+      "slug": "py-class",
+      "description": "PY Classes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Inheritance",
+      "slug": "py-inherit",
+      "description": "PY Inheritance",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "File Handling",
+      "slug": "py-file",
+      "description": "PY File Handling",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Error Handling",
+      "slug": "py-err",
+      "description": "PY Error Handling",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Modules",
+      "slug": "py-mod",
+      "description": "PY Modules",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Standard Library",
+      "slug": "py-std",
+      "description": "PY Standard Library",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Decorators",
+      "slug": "py-dec",
+      "description": "PY Decorators",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Generators",
+      "slug": "py-gen",
+      "description": "PY Generators",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Lambda",
+      "slug": "py-lam",
+      "description": "PY Lambda",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Dates",
+      "slug": "py-date",
+      "description": "PY Dates",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "RegEx",
+      "slug": "py-regex",
+      "description": "PY RegEx",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Best Practices",
+      "slug": "py-best",
+      "description": "PY Best Practices",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "SQL Basics",
+      "slug": "sql-base",
+      "description": "SQL SQL Basics",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "SELECT",
+      "slug": "sql-sel",
+      "description": "SQL SELECT",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "WHERE",
+      "slug": "sql-where",
+      "description": "SQL WHERE",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "ORDER BY",
+      "slug": "sql-order",
+      "description": "SQL ORDER BY",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "LIMIT",
+      "slug": "sql-limit",
+      "description": "SQL LIMIT",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "JOINs",
+      "slug": "sql-join",
+      "description": "SQL JOINs",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "INNER JOIN",
+      "slug": "sql-inner",
+      "description": "SQL INNER JOIN",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "OUTER JOINs",
+      "slug": "sql-outer",
+      "description": "SQL OUTER JOINs",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Aggregates",
+      "slug": "sql-agg",
+      "description": "SQL Aggregates",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "GROUP BY",
+      "slug": "sql-group",
+      "description": "SQL GROUP BY",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "HAVING",
+      "slug": "sql-having",
+      "description": "SQL HAVING",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Subqueries",
+      "slug": "sql-sub",
+      "description": "SQL Subqueries",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "INSERT UPDATE DELETE",
+      "slug": "sql-dml",
+      "description": "SQL INSERT UPDATE DELETE",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "CREATE ALTER DROP",
+      "slug": "sql-ddl",
+      "description": "SQL CREATE ALTER DROP",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Constraints",
+      "slug": "sql-con",
+      "description": "SQL Constraints",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Indexes",
+      "slug": "sql-idx",
+      "description": "SQL Indexes",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Transactions",
+      "slug": "sql-trans",
+      "description": "SQL Transactions",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Views",
+      "slug": "sql-view",
+      "description": "SQL Views",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Normalization",
+      "slug": "sql-norm",
+      "description": "SQL Normalization",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Best Practices",
+      "slug": "sql-best",
+      "description": "SQL Best Practices",
+      "difficulty": "intermediate"
+    }
+  ],
+  "lessons": []
+}

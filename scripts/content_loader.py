@@ -19,7 +19,7 @@ from app.models.content import Category, Topic, Lesson, CodeExample, Exercise
 from app.models.user import Base
 
 DATABASE_URL = "postgresql://postgres:postgres@postgres:5432/dsamaster"
-CONTENT_DIR = Path(__file__).parent / "content_data"
+CONTENT_DIR = Path(__file__).parent.parent / "content_data"
 
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)

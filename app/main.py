@@ -23,6 +23,7 @@ from .routers import blog
 from .routers import progress
 from .routers import admin
 from .routers import content as content_router
+from .routers import full_fledged as full_fledged_router
 
 # Import models for DB init
 from .db import engine
@@ -66,6 +67,7 @@ app.include_router(blog.router)
 app.include_router(progress.router)
 app.include_router(admin.router)
 app.include_router(content_router.router)
+app.include_router(full_fledged_router.router)
 
 # ---------------------------------------------------------------------------
 # Request / Response models
