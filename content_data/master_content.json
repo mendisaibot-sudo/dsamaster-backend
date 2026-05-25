@@ -1,0 +1,615 @@
+{
+  "html": {
+    "category": {
+      "name": "HTML",
+      "slug": "html",
+      "description": "HyperText Markup Language - standard markup for web pages",
+      "icon": "html5",
+      "color": "#E34F26"
+    },
+    "topics": [
+      {
+        "name": "HTML Basics",
+        "slug": "html-basics",
+        "difficulty": "beginner",
+        "description": "Introduction to HTML, editors, elements, and attributes"
+      },
+      {
+        "name": "HTML Headings",
+        "slug": "html-headings",
+        "difficulty": "beginner",
+        "description": "H1-H6, horizontal rules, and comments"
+      },
+      {
+        "name": "HTML Paragraphs",
+        "slug": "html-paragraphs",
+        "difficulty": "beginner",
+        "description": "Paragraphs, line breaks, and preformatted text"
+      },
+      {
+        "name": "HTML Styles",
+        "slug": "html-styles",
+        "difficulty": "beginner",
+        "description": "CSS inline styles, colors, fonts, spacing"
+      },
+      {
+        "name": "HTML Formatting",
+        "slug": "html-formatting",
+        "difficulty": "beginner",
+        "description": "Bold, italic, underline, subscript, superscript"
+      },
+      {
+        "name": "HTML Quotations",
+        "slug": "html-quotations",
+        "difficulty": "beginner",
+        "description": "Blockquote, cite, short quotations, and bi-directional"
+      },
+      {
+        "name": "HTML Comments",
+        "slug": "html-comments",
+        "difficulty": "beginner",
+        "description": "Single line, multi-line, and conditional comments"
+      },
+      {
+        "name": "HTML Colors",
+        "slug": "html-colors",
+        "difficulty": "beginner",
+        "description": "RGB, HEX, HSL, RGBA, HSLA color values"
+      },
+      {
+        "name": "HTML Links",
+        "slug": "html-links",
+        "difficulty": "beginner",
+        "description": "Href, target, bookmarks, and images as links"
+      },
+      {
+        "name": "HTML Images",
+        "slug": "html-images",
+        "difficulty": "beginner",
+        "description": "Src, alt, width/height, image map, background images"
+      },
+      {
+        "name": "HTML Tables",
+        "slug": "html-tables",
+        "difficulty": "intermediate",
+        "description": "Table borders, colspan/rowspan, padding, striping"
+      },
+      {
+        "name": "HTML Lists",
+        "slug": "html-lists",
+        "difficulty": "beginner",
+        "description": "Unordered, ordered, and description lists"
+      },
+      {
+        "name": "HTML Block/Inline",
+        "slug": "html-block-inline",
+        "difficulty": "intermediate",
+        "description": "Block elements, inline elements, div vs span"
+      },
+      {
+        "name": "HTML Classes",
+        "slug": "html-classes",
+        "difficulty": "intermediate",
+        "description": "Class attribute, multiple classes, different tags"
+      },
+      {
+        "name": "HTML Id",
+        "slug": "html-id",
+        "difficulty": "intermediate",
+        "description": "Id attribute, difference between class and id"
+      },
+      {
+        "name": "HTML Iframes",
+        "slug": "html-iframes",
+        "difficulty": "intermediate",
+        "description": "Iframe syntax, target for link, remove border"
+      },
+      {
+        "name": "HTML Semantics",
+        "slug": "html-semantics",
+        "difficulty": "intermediate",
+        "description": "Header, nav, section, article, aside, footer"
+      },
+      {
+        "name": "HTML Forms",
+        "slug": "html-forms",
+        "difficulty": "intermediate",
+        "description": "Form elements, input types, form attributes"
+      },
+      {
+        "name": "HTML Media",
+        "slug": "html-media",
+        "difficulty": "intermediate",
+        "description": "Video, audio, YouTube embeds, track"
+      },
+      {
+        "name": "HTML APIs",
+        "slug": "html-apis",
+        "difficulty": "advanced",
+        "description": "Geolocation, drag/drop, web storage, web workers"
+      }
+    ],
+    "lessons": [
+      {
+        "topic_slug": "html-basics",
+        "title": "HTML Basics - Introduction",
+        "slug": "html-basics-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Basics at Introduction level. Here you will learn about Introduction to HTML, editors, elements, and attributes."
+      },
+      {
+        "topic_slug": "html-basics",
+        "title": "HTML Basics - Intermediate",
+        "slug": "html-basics-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Basics at Intermediate level. Here you will learn about Introduction to HTML, editors, elements, and attributes."
+      },
+      {
+        "topic_slug": "html-basics",
+        "title": "HTML Basics - Advanced",
+        "slug": "html-basics-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Basics at Advanced level. Here you will learn about Introduction to HTML, editors, elements, and attributes."
+      },
+      {
+        "topic_slug": "html-headings",
+        "title": "HTML Headings - Introduction",
+        "slug": "html-headings-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Headings at Introduction level. Here you will learn about H1-H6, horizontal rules, and comments."
+      },
+      {
+        "topic_slug": "html-headings",
+        "title": "HTML Headings - Intermediate",
+        "slug": "html-headings-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Headings at Intermediate level. Here you will learn about H1-H6, horizontal rules, and comments."
+      },
+      {
+        "topic_slug": "html-headings",
+        "title": "HTML Headings - Advanced",
+        "slug": "html-headings-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Headings at Advanced level. Here you will learn about H1-H6, horizontal rules, and comments."
+      },
+      {
+        "topic_slug": "html-paragraphs",
+        "title": "HTML Paragraphs - Introduction",
+        "slug": "html-paragraphs-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Paragraphs at Introduction level. Here you will learn about Paragraphs, line breaks, and preformatted text."
+      },
+      {
+        "topic_slug": "html-paragraphs",
+        "title": "HTML Paragraphs - Intermediate",
+        "slug": "html-paragraphs-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Paragraphs at Intermediate level. Here you will learn about Paragraphs, line breaks, and preformatted text."
+      },
+      {
+        "topic_slug": "html-paragraphs",
+        "title": "HTML Paragraphs - Advanced",
+        "slug": "html-paragraphs-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Paragraphs at Advanced level. Here you will learn about Paragraphs, line breaks, and preformatted text."
+      },
+      {
+        "topic_slug": "html-styles",
+        "title": "HTML Styles - Introduction",
+        "slug": "html-styles-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Styles at Introduction level. Here you will learn about CSS inline styles, colors, fonts, spacing."
+      },
+      {
+        "topic_slug": "html-styles",
+        "title": "HTML Styles - Intermediate",
+        "slug": "html-styles-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Styles at Intermediate level. Here you will learn about CSS inline styles, colors, fonts, spacing."
+      },
+      {
+        "topic_slug": "html-styles",
+        "title": "HTML Styles - Advanced",
+        "slug": "html-styles-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Styles at Advanced level. Here you will learn about CSS inline styles, colors, fonts, spacing."
+      },
+      {
+        "topic_slug": "html-formatting",
+        "title": "HTML Formatting - Introduction",
+        "slug": "html-formatting-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Formatting at Introduction level. Here you will learn about Bold, italic, underline, subscript, superscript."
+      },
+      {
+        "topic_slug": "html-formatting",
+        "title": "HTML Formatting - Intermediate",
+        "slug": "html-formatting-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Formatting at Intermediate level. Here you will learn about Bold, italic, underline, subscript, superscript."
+      },
+      {
+        "topic_slug": "html-formatting",
+        "title": "HTML Formatting - Advanced",
+        "slug": "html-formatting-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Formatting at Advanced level. Here you will learn about Bold, italic, underline, subscript, superscript."
+      },
+      {
+        "topic_slug": "html-quotations",
+        "title": "HTML Quotations - Introduction",
+        "slug": "html-quotations-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Quotations at Introduction level. Here you will learn about Blockquote, cite, short quotations, and bi-directional."
+      },
+      {
+        "topic_slug": "html-quotations",
+        "title": "HTML Quotations - Intermediate",
+        "slug": "html-quotations-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Quotations at Intermediate level. Here you will learn about Blockquote, cite, short quotations, and bi-directional."
+      },
+      {
+        "topic_slug": "html-quotations",
+        "title": "HTML Quotations - Advanced",
+        "slug": "html-quotations-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Quotations at Advanced level. Here you will learn about Blockquote, cite, short quotations, and bi-directional."
+      },
+      {
+        "topic_slug": "html-comments",
+        "title": "HTML Comments - Introduction",
+        "slug": "html-comments-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Comments at Introduction level. Here you will learn about Single line, multi-line, and conditional comments."
+      },
+      {
+        "topic_slug": "html-comments",
+        "title": "HTML Comments - Intermediate",
+        "slug": "html-comments-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Comments at Intermediate level. Here you will learn about Single line, multi-line, and conditional comments."
+      },
+      {
+        "topic_slug": "html-comments",
+        "title": "HTML Comments - Advanced",
+        "slug": "html-comments-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Comments at Advanced level. Here you will learn about Single line, multi-line, and conditional comments."
+      },
+      {
+        "topic_slug": "html-colors",
+        "title": "HTML Colors - Introduction",
+        "slug": "html-colors-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Colors at Introduction level. Here you will learn about RGB, HEX, HSL, RGBA, HSLA color values."
+      },
+      {
+        "topic_slug": "html-colors",
+        "title": "HTML Colors - Intermediate",
+        "slug": "html-colors-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Colors at Intermediate level. Here you will learn about RGB, HEX, HSL, RGBA, HSLA color values."
+      },
+      {
+        "topic_slug": "html-colors",
+        "title": "HTML Colors - Advanced",
+        "slug": "html-colors-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Colors at Advanced level. Here you will learn about RGB, HEX, HSL, RGBA, HSLA color values."
+      },
+      {
+        "topic_slug": "html-links",
+        "title": "HTML Links - Introduction",
+        "slug": "html-links-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Links at Introduction level. Here you will learn about Href, target, bookmarks, and images as links."
+      },
+      {
+        "topic_slug": "html-links",
+        "title": "HTML Links - Intermediate",
+        "slug": "html-links-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Links at Intermediate level. Here you will learn about Href, target, bookmarks, and images as links."
+      },
+      {
+        "topic_slug": "html-links",
+        "title": "HTML Links - Advanced",
+        "slug": "html-links-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Links at Advanced level. Here you will learn about Href, target, bookmarks, and images as links."
+      },
+      {
+        "topic_slug": "html-images",
+        "title": "HTML Images - Introduction",
+        "slug": "html-images-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Images at Introduction level. Here you will learn about Src, alt, width/height, image map, background images."
+      },
+      {
+        "topic_slug": "html-images",
+        "title": "HTML Images - Intermediate",
+        "slug": "html-images-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Images at Intermediate level. Here you will learn about Src, alt, width/height, image map, background images."
+      },
+      {
+        "topic_slug": "html-images",
+        "title": "HTML Images - Advanced",
+        "slug": "html-images-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Images at Advanced level. Here you will learn about Src, alt, width/height, image map, background images."
+      },
+      {
+        "topic_slug": "html-tables",
+        "title": "HTML Tables - Introduction",
+        "slug": "html-tables-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Tables at Introduction level. Here you will learn about Table borders, colspan/rowspan, padding, striping."
+      },
+      {
+        "topic_slug": "html-tables",
+        "title": "HTML Tables - Intermediate",
+        "slug": "html-tables-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Tables at Intermediate level. Here you will learn about Table borders, colspan/rowspan, padding, striping."
+      },
+      {
+        "topic_slug": "html-tables",
+        "title": "HTML Tables - Advanced",
+        "slug": "html-tables-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Tables at Advanced level. Here you will learn about Table borders, colspan/rowspan, padding, striping."
+      },
+      {
+        "topic_slug": "html-lists",
+        "title": "HTML Lists - Introduction",
+        "slug": "html-lists-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Lists at Introduction level. Here you will learn about Unordered, ordered, and description lists."
+      },
+      {
+        "topic_slug": "html-lists",
+        "title": "HTML Lists - Intermediate",
+        "slug": "html-lists-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Lists at Intermediate level. Here you will learn about Unordered, ordered, and description lists."
+      },
+      {
+        "topic_slug": "html-lists",
+        "title": "HTML Lists - Advanced",
+        "slug": "html-lists-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Lists at Advanced level. Here you will learn about Unordered, ordered, and description lists."
+      },
+      {
+        "topic_slug": "html-block-inline",
+        "title": "HTML Block/Inline - Introduction",
+        "slug": "html-block-inline-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Block/Inline at Introduction level. Here you will learn about Block elements, inline elements, div vs span."
+      },
+      {
+        "topic_slug": "html-block-inline",
+        "title": "HTML Block/Inline - Intermediate",
+        "slug": "html-block-inline-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Block/Inline at Intermediate level. Here you will learn about Block elements, inline elements, div vs span."
+      },
+      {
+        "topic_slug": "html-block-inline",
+        "title": "HTML Block/Inline - Advanced",
+        "slug": "html-block-inline-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Block/Inline at Advanced level. Here you will learn about Block elements, inline elements, div vs span."
+      },
+      {
+        "topic_slug": "html-classes",
+        "title": "HTML Classes - Introduction",
+        "slug": "html-classes-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Classes at Introduction level. Here you will learn about Class attribute, multiple classes, different tags."
+      },
+      {
+        "topic_slug": "html-classes",
+        "title": "HTML Classes - Intermediate",
+        "slug": "html-classes-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Classes at Intermediate level. Here you will learn about Class attribute, multiple classes, different tags."
+      },
+      {
+        "topic_slug": "html-classes",
+        "title": "HTML Classes - Advanced",
+        "slug": "html-classes-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Classes at Advanced level. Here you will learn about Class attribute, multiple classes, different tags."
+      },
+      {
+        "topic_slug": "html-id",
+        "title": "HTML Id - Introduction",
+        "slug": "html-id-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Id at Introduction level. Here you will learn about Id attribute, difference between class and id."
+      },
+      {
+        "topic_slug": "html-id",
+        "title": "HTML Id - Intermediate",
+        "slug": "html-id-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Id at Intermediate level. Here you will learn about Id attribute, difference between class and id."
+      },
+      {
+        "topic_slug": "html-id",
+        "title": "HTML Id - Advanced",
+        "slug": "html-id-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Id at Advanced level. Here you will learn about Id attribute, difference between class and id."
+      },
+      {
+        "topic_slug": "html-iframes",
+        "title": "HTML Iframes - Introduction",
+        "slug": "html-iframes-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Iframes at Introduction level. Here you will learn about Iframe syntax, target for link, remove border."
+      },
+      {
+        "topic_slug": "html-iframes",
+        "title": "HTML Iframes - Intermediate",
+        "slug": "html-iframes-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Iframes at Intermediate level. Here you will learn about Iframe syntax, target for link, remove border."
+      },
+      {
+        "topic_slug": "html-iframes",
+        "title": "HTML Iframes - Advanced",
+        "slug": "html-iframes-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Iframes at Advanced level. Here you will learn about Iframe syntax, target for link, remove border."
+      },
+      {
+        "topic_slug": "html-semantics",
+        "title": "HTML Semantics - Introduction",
+        "slug": "html-semantics-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Semantics at Introduction level. Here you will learn about Header, nav, section, article, aside, footer."
+      },
+      {
+        "topic_slug": "html-semantics",
+        "title": "HTML Semantics - Intermediate",
+        "slug": "html-semantics-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Semantics at Intermediate level. Here you will learn about Header, nav, section, article, aside, footer."
+      },
+      {
+        "topic_slug": "html-semantics",
+        "title": "HTML Semantics - Advanced",
+        "slug": "html-semantics-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Semantics at Advanced level. Here you will learn about Header, nav, section, article, aside, footer."
+      },
+      {
+        "topic_slug": "html-forms",
+        "title": "HTML Forms - Introduction",
+        "slug": "html-forms-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Forms at Introduction level. Here you will learn about Form elements, input types, form attributes."
+      },
+      {
+        "topic_slug": "html-forms",
+        "title": "HTML Forms - Intermediate",
+        "slug": "html-forms-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Forms at Intermediate level. Here you will learn about Form elements, input types, form attributes."
+      },
+      {
+        "topic_slug": "html-forms",
+        "title": "HTML Forms - Advanced",
+        "slug": "html-forms-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Forms at Advanced level. Here you will learn about Form elements, input types, form attributes."
+      },
+      {
+        "topic_slug": "html-media",
+        "title": "HTML Media - Introduction",
+        "slug": "html-media-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML Media at Introduction level. Here you will learn about Video, audio, YouTube embeds, track."
+      },
+      {
+        "topic_slug": "html-media",
+        "title": "HTML Media - Intermediate",
+        "slug": "html-media-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML Media at Intermediate level. Here you will learn about Video, audio, YouTube embeds, track."
+      },
+      {
+        "topic_slug": "html-media",
+        "title": "HTML Media - Advanced",
+        "slug": "html-media-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML Media at Advanced level. Here you will learn about Video, audio, YouTube embeds, track."
+      },
+      {
+        "topic_slug": "html-apis",
+        "title": "HTML APIs - Introduction",
+        "slug": "html-apis-introduction",
+        "difficulty": "beginner",
+        "estimated_minutes": 15,
+        "content": "Lesson content for HTML APIs at Introduction level. Here you will learn about Geolocation, drag/drop, web storage, web workers."
+      },
+      {
+        "topic_slug": "html-apis",
+        "title": "HTML APIs - Intermediate",
+        "slug": "html-apis-intermediate",
+        "difficulty": "intermediate",
+        "estimated_minutes": 25,
+        "content": "Lesson content for HTML APIs at Intermediate level. Here you will learn about Geolocation, drag/drop, web storage, web workers."
+      },
+      {
+        "topic_slug": "html-apis",
+        "title": "HTML APIs - Advanced",
+        "slug": "html-apis-advanced",
+        "difficulty": "advanced",
+        "estimated_minutes": 35,
+        "content": "Lesson content for HTML APIs at Advanced level. Here you will learn about Geolocation, drag/drop, web storage, web workers."
+      }
+    ]
+  }
+}
