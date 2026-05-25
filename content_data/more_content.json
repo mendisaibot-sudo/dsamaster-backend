@@ -1,0 +1,2492 @@
+{
+  "categories": [
+    {
+      "name": "Python Basics",
+      "slug": "python-basics",
+      "description": "Python Basics",
+      "order_index": 1,
+      "topics": [
+        {
+          "name": "Variables",
+          "slug": "python-variables",
+          "difficulty": "beginner",
+          "description": "Vars",
+          "lessons": [
+            {
+              "title": "Introduction to Variables",
+              "slug": "python-variables-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Variables is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Variables\nprint(\"Variables\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Variables Fundamentals",
+              "slug": "python-variables-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Variables usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Variables Fundamentals\nprint(\"Variables\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Variables",
+              "slug": "python-variables-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Variables concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Variables\nprint(\"Variables\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Variables Patterns",
+              "slug": "python-variables-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Variables effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Variables Patterns\nprint(\"Variables\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Data Types",
+          "slug": "python-data-types",
+          "difficulty": "beginner",
+          "description": "Types",
+          "lessons": [
+            {
+              "title": "Introduction to Data Types",
+              "slug": "python-data-types-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Data Types is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Data Types\nprint(\"Data Types\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Data Types Fundamentals",
+              "slug": "python-data-types-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Data Types usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Data Types Fundamentals\nprint(\"Data Types\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Data Types",
+              "slug": "python-data-types-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Data Types concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Data Types\nprint(\"Data Types\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Data Types Patterns",
+              "slug": "python-data-types-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Data Types effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Data Types Patterns\nprint(\"Data Types\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Control Flow",
+          "slug": "python-control-flow",
+          "difficulty": "beginner",
+          "description": "Flow",
+          "lessons": [
+            {
+              "title": "Introduction to Control Flow",
+              "slug": "python-control-flow-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Control Flow is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Control Flow\nprint(\"Control Flow\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Control Flow Fundamentals",
+              "slug": "python-control-flow-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Control Flow usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Control Flow Fundamentals\nprint(\"Control Flow\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Control Flow",
+              "slug": "python-control-flow-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Control Flow concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Control Flow\nprint(\"Control Flow\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Control Flow Patterns",
+              "slug": "python-control-flow-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Control Flow effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Control Flow Patterns\nprint(\"Control Flow\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Functions",
+          "slug": "python-functions",
+          "difficulty": "beginner",
+          "description": "Funcs",
+          "lessons": [
+            {
+              "title": "Introduction to Functions",
+              "slug": "python-functions-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Functions is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Functions\nprint(\"Functions\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Functions Fundamentals",
+              "slug": "python-functions-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Functions usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Functions Fundamentals\nprint(\"Functions\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Functions",
+              "slug": "python-functions-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Functions concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Functions\nprint(\"Functions\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Functions Patterns",
+              "slug": "python-functions-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Functions effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Functions Patterns\nprint(\"Functions\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Modules",
+          "slug": "python-modules",
+          "difficulty": "intermediate",
+          "description": "Mods",
+          "lessons": [
+            {
+              "title": "Introduction to Modules",
+              "slug": "python-modules-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Modules is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Modules\nprint(\"Modules\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Modules Fundamentals",
+              "slug": "python-modules-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Modules usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Modules Fundamentals\nprint(\"Modules\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Modules",
+              "slug": "python-modules-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Modules concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Modules\nprint(\"Modules\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Modules Patterns",
+              "slug": "python-modules-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Modules effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Modules Patterns\nprint(\"Modules\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "OOP",
+          "slug": "python-oop",
+          "difficulty": "intermediate",
+          "description": "OOP",
+          "lessons": [
+            {
+              "title": "Introduction to OOP",
+              "slug": "python-oop-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "OOP is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to OOP\nprint(\"OOP\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "OOP Fundamentals",
+              "slug": "python-oop-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical OOP usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# OOP Fundamentals\nprint(\"OOP\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced OOP",
+              "slug": "python-oop-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper OOP concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced OOP\nprint(\"OOP\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "OOP Patterns",
+              "slug": "python-oop-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using OOP effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# OOP Patterns\nprint(\"OOP\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Error Handling",
+          "slug": "python-error-handling",
+          "difficulty": "intermediate",
+          "description": "Errors",
+          "lessons": [
+            {
+              "title": "Introduction to Error Handling",
+              "slug": "python-error-handling-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Error Handling is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Error Handling\nprint(\"Error Handling\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Error Handling Fundamentals",
+              "slug": "python-error-handling-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Error Handling usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Error Handling Fundamentals\nprint(\"Error Handling\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Error Handling",
+              "slug": "python-error-handling-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Error Handling concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Error Handling\nprint(\"Error Handling\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Error Handling Patterns",
+              "slug": "python-error-handling-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Error Handling effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Error Handling Patterns\nprint(\"Error Handling\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "File I/O",
+          "slug": "python-file-io",
+          "difficulty": "intermediate",
+          "description": "Files",
+          "lessons": [
+            {
+              "title": "Introduction to File I/O",
+              "slug": "python-file-io-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "File I/O is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to File I/O\nprint(\"File I/O\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "File I/O Fundamentals",
+              "slug": "python-file-io-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical File I/O usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# File I/O Fundamentals\nprint(\"File I/O\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced File I/O",
+              "slug": "python-file-io-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper File I/O concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced File I/O\nprint(\"File I/O\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "File I/O Patterns",
+              "slug": "python-file-io-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using File I/O effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# File I/O Patterns\nprint(\"File I/O\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Iterators",
+          "slug": "python-iterators",
+          "difficulty": "advanced",
+          "description": "Iterators",
+          "lessons": [
+            {
+              "title": "Introduction to Iterators",
+              "slug": "python-iterators-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Iterators is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Iterators\nprint(\"Iterators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Iterators Fundamentals",
+              "slug": "python-iterators-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Iterators usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Iterators Fundamentals\nprint(\"Iterators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Iterators",
+              "slug": "python-iterators-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Iterators concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Iterators\nprint(\"Iterators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Iterators Patterns",
+              "slug": "python-iterators-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Iterators effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Iterators Patterns\nprint(\"Iterators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Decorators",
+          "slug": "python-decorators",
+          "difficulty": "advanced",
+          "description": "Decorators",
+          "lessons": [
+            {
+              "title": "Introduction to Decorators",
+              "slug": "python-decorators-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Decorators is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Introduction to Decorators\nprint(\"Decorators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Decorators Fundamentals",
+              "slug": "python-decorators-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Decorators usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Decorators Fundamentals\nprint(\"Decorators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Decorators",
+              "slug": "python-decorators-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Decorators concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Advanced Decorators\nprint(\"Decorators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Decorators Patterns",
+              "slug": "python-decorators-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Decorators effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "python",
+                  "code": "# Decorators Patterns\nprint(\"Decorators\")"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "description": "JavaScript",
+      "order_index": 2,
+      "topics": [
+        {
+          "name": "Variables",
+          "slug": "js-variables",
+          "difficulty": "beginner",
+          "description": "Vars",
+          "lessons": [
+            {
+              "title": "Introduction to Variables",
+              "slug": "js-variables-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Variables is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Variables\nconsole.log(\"Variables\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Variables Fundamentals",
+              "slug": "js-variables-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Variables usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Variables Fundamentals\nconsole.log(\"Variables\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Variables",
+              "slug": "js-variables-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Variables concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Variables\nconsole.log(\"Variables\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Variables Patterns",
+              "slug": "js-variables-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Variables effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Variables Patterns\nconsole.log(\"Variables\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Data Types",
+          "slug": "js-data-types",
+          "difficulty": "beginner",
+          "description": "Types",
+          "lessons": [
+            {
+              "title": "Introduction to Data Types",
+              "slug": "js-data-types-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Data Types is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Data Types\nconsole.log(\"Data Types\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Data Types Fundamentals",
+              "slug": "js-data-types-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Data Types usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Data Types Fundamentals\nconsole.log(\"Data Types\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Data Types",
+              "slug": "js-data-types-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Data Types concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Data Types\nconsole.log(\"Data Types\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Data Types Patterns",
+              "slug": "js-data-types-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Data Types effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Data Types Patterns\nconsole.log(\"Data Types\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Functions",
+          "slug": "js-functions",
+          "difficulty": "beginner",
+          "description": "Funcs",
+          "lessons": [
+            {
+              "title": "Introduction to Functions",
+              "slug": "js-functions-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Functions is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Functions\nconsole.log(\"Functions\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Functions Fundamentals",
+              "slug": "js-functions-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Functions usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Functions Fundamentals\nconsole.log(\"Functions\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Functions",
+              "slug": "js-functions-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Functions concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Functions\nconsole.log(\"Functions\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Functions Patterns",
+              "slug": "js-functions-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Functions effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Functions Patterns\nconsole.log(\"Functions\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Arrays",
+          "slug": "js-arrays",
+          "difficulty": "beginner",
+          "description": "Arrays",
+          "lessons": [
+            {
+              "title": "Introduction to Arrays",
+              "slug": "js-arrays-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Arrays is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Arrays\nconsole.log(\"Arrays\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Arrays Fundamentals",
+              "slug": "js-arrays-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Arrays usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Arrays Fundamentals\nconsole.log(\"Arrays\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Arrays",
+              "slug": "js-arrays-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Arrays concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Arrays\nconsole.log(\"Arrays\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Arrays Patterns",
+              "slug": "js-arrays-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Arrays effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Arrays Patterns\nconsole.log(\"Arrays\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Objects",
+          "slug": "js-objects",
+          "difficulty": "beginner",
+          "description": "Objects",
+          "lessons": [
+            {
+              "title": "Introduction to Objects",
+              "slug": "js-objects-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Objects is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Objects\nconsole.log(\"Objects\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Objects Fundamentals",
+              "slug": "js-objects-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Objects usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Objects Fundamentals\nconsole.log(\"Objects\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Objects",
+              "slug": "js-objects-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Objects concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Objects\nconsole.log(\"Objects\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Objects Patterns",
+              "slug": "js-objects-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Objects effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Objects Patterns\nconsole.log(\"Objects\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "DOM Manipulation",
+          "slug": "js-dom",
+          "difficulty": "intermediate",
+          "description": "DOM",
+          "lessons": [
+            {
+              "title": "Introduction to DOM Manipulation",
+              "slug": "js-dom-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "DOM Manipulation is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to DOM Manipulation\nconsole.log(\"DOM Manipulation\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "DOM Manipulation Fundamentals",
+              "slug": "js-dom-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical DOM Manipulation usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// DOM Manipulation Fundamentals\nconsole.log(\"DOM Manipulation\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced DOM Manipulation",
+              "slug": "js-dom-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper DOM Manipulation concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced DOM Manipulation\nconsole.log(\"DOM Manipulation\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "DOM Manipulation Patterns",
+              "slug": "js-dom-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using DOM Manipulation effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// DOM Manipulation Patterns\nconsole.log(\"DOM Manipulation\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Async Programming",
+          "slug": "js-async",
+          "difficulty": "intermediate",
+          "description": "Async",
+          "lessons": [
+            {
+              "title": "Introduction to Async Programming",
+              "slug": "js-async-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Async Programming is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Async Programming\nconsole.log(\"Async Programming\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Async Programming Fundamentals",
+              "slug": "js-async-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Async Programming usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Async Programming Fundamentals\nconsole.log(\"Async Programming\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Async Programming",
+              "slug": "js-async-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Async Programming concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Async Programming\nconsole.log(\"Async Programming\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Async Programming Patterns",
+              "slug": "js-async-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Async Programming effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Async Programming Patterns\nconsole.log(\"Async Programming\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "ES6 Features",
+          "slug": "js-es6",
+          "difficulty": "intermediate",
+          "description": "ES6",
+          "lessons": [
+            {
+              "title": "Introduction to ES6 Features",
+              "slug": "js-es6-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "ES6 Features is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to ES6 Features\nconsole.log(\"ES6 Features\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "ES6 Features Fundamentals",
+              "slug": "js-es6-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical ES6 Features usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// ES6 Features Fundamentals\nconsole.log(\"ES6 Features\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced ES6 Features",
+              "slug": "js-es6-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper ES6 Features concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced ES6 Features\nconsole.log(\"ES6 Features\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "ES6 Features Patterns",
+              "slug": "js-es6-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using ES6 Features effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// ES6 Features Patterns\nconsole.log(\"ES6 Features\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Events",
+          "slug": "js-events",
+          "difficulty": "intermediate",
+          "description": "Events",
+          "lessons": [
+            {
+              "title": "Introduction to Events",
+              "slug": "js-events-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Events is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Events\nconsole.log(\"Events\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Events Fundamentals",
+              "slug": "js-events-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Events usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Events Fundamentals\nconsole.log(\"Events\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Events",
+              "slug": "js-events-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Events concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Events\nconsole.log(\"Events\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Events Patterns",
+              "slug": "js-events-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Events effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Events Patterns\nconsole.log(\"Events\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Modules",
+          "slug": "js-modules",
+          "difficulty": "intermediate",
+          "description": "Modules",
+          "lessons": [
+            {
+              "title": "Introduction to Modules",
+              "slug": "js-modules-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Modules is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Introduction to Modules\nconsole.log(\"Modules\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Modules Fundamentals",
+              "slug": "js-modules-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Modules usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Modules Fundamentals\nconsole.log(\"Modules\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Modules",
+              "slug": "js-modules-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Modules concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Advanced Modules\nconsole.log(\"Modules\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Modules Patterns",
+              "slug": "js-modules-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Modules effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "javascript",
+                  "code": "// Modules Patterns\nconsole.log(\"Modules\");"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "slug": "sql",
+      "description": "SQL",
+      "order_index": 3,
+      "topics": [
+        {
+          "name": "SELECT Queries",
+          "slug": "sql-select",
+          "difficulty": "beginner",
+          "description": "SELECT",
+          "lessons": [
+            {
+              "title": "Introduction to SELECT Queries",
+              "slug": "sql-select-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "SELECT Queries is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to SELECT Queries\nSELECT * FROM sql-select;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "SELECT Queries Fundamentals",
+              "slug": "sql-select-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical SELECT Queries usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- SELECT Queries Fundamentals\nSELECT * FROM sql-select;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced SELECT Queries",
+              "slug": "sql-select-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper SELECT Queries concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced SELECT Queries\nSELECT * FROM sql-select;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "SELECT Queries Patterns",
+              "slug": "sql-select-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using SELECT Queries effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- SELECT Queries Patterns\nSELECT * FROM sql-select;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "WHERE Clauses",
+          "slug": "sql-where",
+          "difficulty": "beginner",
+          "description": "WHERE",
+          "lessons": [
+            {
+              "title": "Introduction to WHERE Clauses",
+              "slug": "sql-where-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "WHERE Clauses is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to WHERE Clauses\nSELECT * FROM sql-where;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "WHERE Clauses Fundamentals",
+              "slug": "sql-where-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical WHERE Clauses usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- WHERE Clauses Fundamentals\nSELECT * FROM sql-where;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced WHERE Clauses",
+              "slug": "sql-where-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper WHERE Clauses concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced WHERE Clauses\nSELECT * FROM sql-where;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "WHERE Clauses Patterns",
+              "slug": "sql-where-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using WHERE Clauses effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- WHERE Clauses Patterns\nSELECT * FROM sql-where;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "JOIN Operations",
+          "slug": "sql-joins",
+          "difficulty": "intermediate",
+          "description": "JOINs",
+          "lessons": [
+            {
+              "title": "Introduction to JOIN Operations",
+              "slug": "sql-joins-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "JOIN Operations is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to JOIN Operations\nSELECT * FROM sql-joins;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "JOIN Operations Fundamentals",
+              "slug": "sql-joins-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical JOIN Operations usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- JOIN Operations Fundamentals\nSELECT * FROM sql-joins;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced JOIN Operations",
+              "slug": "sql-joins-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper JOIN Operations concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced JOIN Operations\nSELECT * FROM sql-joins;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "JOIN Operations Patterns",
+              "slug": "sql-joins-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using JOIN Operations effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- JOIN Operations Patterns\nSELECT * FROM sql-joins;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Aggregation",
+          "slug": "sql-aggregation",
+          "difficulty": "intermediate",
+          "description": "Agg",
+          "lessons": [
+            {
+              "title": "Introduction to Aggregation Functions",
+              "slug": "sql-aggregation-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Aggregation Functions is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to Aggregation Functions\nSELECT * FROM sql-aggregation;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Aggregation Functions Fundamentals",
+              "slug": "sql-aggregation-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Aggregation Functions usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Aggregation Functions Fundamentals\nSELECT * FROM sql-aggregation;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Aggregation Functions",
+              "slug": "sql-aggregation-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Aggregation Functions concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced Aggregation Functions\nSELECT * FROM sql-aggregation;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Aggregation Functions Patterns",
+              "slug": "sql-aggregation-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Aggregation Functions effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Aggregation Functions Patterns\nSELECT * FROM sql-aggregation;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Subqueries",
+          "slug": "sql-subqueries",
+          "difficulty": "intermediate",
+          "description": "Subq",
+          "lessons": [
+            {
+              "title": "Introduction to Subqueries",
+              "slug": "sql-subqueries-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Subqueries is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to Subqueries\nSELECT * FROM sql-subqueries;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Subqueries Fundamentals",
+              "slug": "sql-subqueries-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Subqueries usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Subqueries Fundamentals\nSELECT * FROM sql-subqueries;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Subqueries",
+              "slug": "sql-subqueries-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Subqueries concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced Subqueries\nSELECT * FROM sql-subqueries;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Subqueries Patterns",
+              "slug": "sql-subqueries-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Subqueries effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Subqueries Patterns\nSELECT * FROM sql-subqueries;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Indexes",
+          "slug": "sql-indexes",
+          "difficulty": "intermediate",
+          "description": "Idx",
+          "lessons": [
+            {
+              "title": "Introduction to Database Indexes",
+              "slug": "sql-indexes-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Database Indexes is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to Database Indexes\nSELECT * FROM sql-indexes;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Database Indexes Fundamentals",
+              "slug": "sql-indexes-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Database Indexes usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Database Indexes Fundamentals\nSELECT * FROM sql-indexes;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Database Indexes",
+              "slug": "sql-indexes-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Database Indexes concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced Database Indexes\nSELECT * FROM sql-indexes;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Database Indexes Patterns",
+              "slug": "sql-indexes-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Database Indexes effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Database Indexes Patterns\nSELECT * FROM sql-indexes;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Transactions",
+          "slug": "sql-transactions",
+          "difficulty": "advanced",
+          "description": "Trans",
+          "lessons": [
+            {
+              "title": "Introduction to Transactions",
+              "slug": "sql-transactions-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Transactions is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to Transactions\nSELECT * FROM sql-transactions;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Transactions Fundamentals",
+              "slug": "sql-transactions-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Transactions usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Transactions Fundamentals\nSELECT * FROM sql-transactions;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Transactions",
+              "slug": "sql-transactions-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Transactions concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced Transactions\nSELECT * FROM sql-transactions;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Transactions Patterns",
+              "slug": "sql-transactions-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Transactions effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Transactions Patterns\nSELECT * FROM sql-transactions;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        },
+        {
+          "name": "Normalization",
+          "slug": "sql-normalization",
+          "difficulty": "advanced",
+          "description": "Norm",
+          "lessons": [
+            {
+              "title": "Introduction to Normalization",
+              "slug": "sql-normalization-l1",
+              "difficulty": "beginner",
+              "estimated_time": "10 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Normalization is a core concept. This lesson covers basics. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Introduction to Normalization\nSELECT * FROM sql-normalization;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Normalization Fundamentals",
+              "slug": "sql-normalization-l2",
+              "difficulty": "beginner",
+              "estimated_time": "15 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Practical Normalization usage with common patterns. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Normalization Fundamentals\nSELECT * FROM sql-normalization;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Advanced Normalization",
+              "slug": "sql-normalization-l3",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Deeper Normalization concepts including optimization. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Advanced Normalization\nSELECT * FROM sql-normalization;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            },
+            {
+              "title": "Normalization Patterns",
+              "slug": "sql-normalization-l4",
+              "difficulty": "intermediate",
+              "estimated_time": "20 min",
+              "content_blocks": [
+                {
+                  "type": "text",
+                  "content": "Production patterns using Normalization effectively. By the end, you will understand how and when to use it."
+                }
+              ],
+              "code_examples": [
+                {
+                  "language": "sql",
+                  "code": "-- Normalization Patterns\nSELECT * FROM sql-normalization;"
+                }
+              ],
+              "mcq_exercises": [],
+              "coding_exercises": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
