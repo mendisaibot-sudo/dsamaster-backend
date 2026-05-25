@@ -1,0 +1,403 @@
+{
+  "categories": [
+    {
+      "name": "HTML",
+      "slug": "html",
+      "description": "Structure web pages with HTML.",
+      "icon": "html5",
+      "color": "#E34F26"
+    }
+  ],
+  "topics": [
+    {
+      "name": "HTML Basics",
+      "slug": "html-basics",
+      "description": "Introduction to HTML",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Document Structure",
+      "slug": "html-document-structure",
+      "description": "Building HTML documents",
+      "difficulty": "beginner"
+    }
+  ],
+  "lessons": [
+    {
+      "topic_slug": "html-basics",
+      "title": "What is HTML?",
+      "slug": "html-what-is",
+      "difficulty": "beginner",
+      "estimated_minutes": 15,
+      "order_index": 0,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "What is HTML?"
+          },
+          {
+            "type": "text",
+            "text": "HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure using elements that tell the browser how to display content."
+          },
+          {
+            "type": "list",
+            "items": [
+              "HTML = HyperText Markup Language",
+              "Describes structure of web pages",
+              "Uses elements to label content",
+              "Created by Tim Berners-Lee in 1991"
+            ]
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>My First Page</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n    <p>This is my first web page.</p>\n</body>\n</html>",
+          "description": "Complete valid HTML5 document",
+          "output": "Page displays heading and paragraph"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "What does HTML stand for?",
+          "options": [
+            {
+              "text": "HyperText Markup Language",
+              "correct": true
+            },
+            {
+              "text": "HyperText Modern Language",
+              "correct": false
+            },
+            {
+              "text": "Home Tool Markup Language",
+              "correct": false
+            },
+            {
+              "text": "Hyper Transfer Markup Language",
+              "correct": false
+            }
+          ],
+          "correct_answer": "HyperText Markup Language",
+          "hint": "Think about marking up text for hypertext.",
+          "explanation": "HTML is HyperText Markup Language, the standard for web pages.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "topic_slug": "html-basics",
+      "title": "HTML Elements",
+      "slug": "html-elements",
+      "difficulty": "beginner",
+      "estimated_minutes": 20,
+      "order_index": 1,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "HTML Elements"
+          },
+          {
+            "type": "text",
+            "text": "An HTML element is defined by a start tag, content, and an end tag."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Start tag: <tagname>",
+              "End tag: </tagname>",
+              "Content goes between tags",
+              "Void elements have no end tag"
+            ]
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph.</p>\n<div>\n    <h1>A heading</h1>\n</div>\n<br>\n<hr>",
+          "description": "Element examples",
+          "output": "Paragraph, heading, line break, rule"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "What closes an HTML element?",
+          "options": [
+            {
+              "text": "The end tag",
+              "correct": true
+            },
+            {
+              "text": "The start tag",
+              "correct": false
+            },
+            {
+              "text": "DOCTYPE",
+              "correct": false
+            },
+            {
+              "text": "<html> tag",
+              "correct": false
+            }
+          ],
+          "correct_answer": "The end tag",
+          "hint": "It has a forward slash.",
+          "explanation": "End tags like </tagname> close elements.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "topic_slug": "html-basics",
+      "title": "HTML Attributes",
+      "slug": "html-attributes",
+      "difficulty": "beginner",
+      "estimated_minutes": 20,
+      "order_index": 2,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "HTML Attributes"
+          },
+          {
+            "type": "text",
+            "text": "Attributes provide extra information about elements."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Always in the start tag",
+              "Format: name='value'",
+              "Common: href, src, alt, id, class"
+            ]
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://developer.mozilla.org\" title=\"MDN\">Visit MDN</a>\n<img src=\"logo.png\" alt=\"Logo\" width=\"200\">",
+          "description": "Common attributes",
+          "output": "Link with tooltip and image"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "Where are attributes placed?",
+          "options": [
+            {
+              "text": "In the start tag",
+              "correct": true
+            },
+            {
+              "text": "In the end tag",
+              "correct": false
+            },
+            {
+              "text": "Between tags",
+              "correct": false
+            },
+            {
+              "text": "Before DOCTYPE",
+              "correct": false
+            }
+          ],
+          "correct_answer": "In the start tag",
+          "hint": "They modify the opening part.",
+          "explanation": "Attributes go in start tags as name='value'.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "topic_slug": "html-document-structure",
+      "title": "DOCTYPE Declaration",
+      "slug": "html-doctype",
+      "difficulty": "beginner",
+      "estimated_minutes": 15,
+      "order_index": 0,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "DOCTYPE Declaration"
+          },
+          {
+            "type": "text",
+            "text": "DOCTYPE tells the browser which HTML version to use. HTML5 uses <!DOCTYPE html>."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Must be first line",
+              "HTML5 is shortest ever",
+              "Ensures standards mode rendering"
+            ]
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html>\n<head><title>Page</title></head>\n<body><p>Hello</p></body>\n</html>",
+          "description": "HTML5 doctype",
+          "output": "Standards mode rendering"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "What does DOCTYPE do?",
+          "options": [
+            {
+              "text": "Declares HTML version",
+              "correct": true
+            },
+            {
+              "text": "Creates links",
+              "correct": false
+            },
+            {
+              "text": "Defines styles",
+              "correct": false
+            },
+            {
+              "text": "Runs scripts",
+              "correct": false
+            }
+          ],
+          "correct_answer": "Declares HTML version",
+          "hint": "First line of any HTML file.",
+          "explanation": "DOCTYPE declares the document type to the browser.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "topic_slug": "html-document-structure",
+      "title": "Head Section",
+      "slug": "html-head",
+      "difficulty": "beginner",
+      "estimated_minutes": 20,
+      "order_index": 1,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "The Head Section"
+          },
+          {
+            "type": "text",
+            "text": "The <head> contains metadata \u2014 information about the document."
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<head>\n    <meta charset=\"UTF-8\">\n    <title>My Website</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>",
+          "description": "Head section",
+          "output": "Sets encoding, title, CSS"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "What goes in <head>?",
+          "options": [
+            {
+              "text": "Metadata",
+              "correct": true
+            },
+            {
+              "text": "Page content",
+              "correct": false
+            },
+            {
+              "text": "Footer",
+              "correct": false
+            },
+            {
+              "text": "Images",
+              "correct": false
+            }
+          ],
+          "correct_answer": "Metadata",
+          "hint": "Information about the page.",
+          "explanation": "<head> holds metadata like title, meta tags, links.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "topic_slug": "html-document-structure",
+      "title": "Body Section",
+      "slug": "html-body",
+      "difficulty": "beginner",
+      "estimated_minutes": 20,
+      "order_index": 2,
+      "content_json": {
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "The Body Section"
+          },
+          {
+            "type": "text",
+            "text": "The <body> contains all visible content of the web page."
+          }
+        ]
+      },
+      "code_examples": [
+        {
+          "language": "html",
+          "code": "<body>\n    <h1>Welcome</h1>\n    <p>This is visible content.</p>\n</body>",
+          "description": "Body content",
+          "output": "Visible heading and paragraph"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "question": "What goes in <body>?",
+          "options": [
+            {
+              "text": "Visible content",
+              "correct": true
+            },
+            {
+              "text": "Metadata",
+              "correct": false
+            },
+            {
+              "text": "Styles",
+              "correct": false
+            },
+            {
+              "text": "Scripts only",
+              "correct": false
+            }
+          ],
+          "correct_answer": "Visible content",
+          "hint": "This is what users see.",
+          "explanation": "<body> contains all visible page content.",
+          "difficulty": "beginner"
+        }
+      ]
+    }
+  ]
+}

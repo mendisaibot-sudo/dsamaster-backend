@@ -83,3 +83,24 @@ php = [
 ts = [
     ("Intro","typescript-intro","beginner","Introduction to TypeScript, setup, tsc, and first program"),
     ("Types","typescript-types","beginner","Basic types, tuples, enums, any, union types, and type aliases"),
+    ("Interfaces","typescript-interfaces","intermediate","Interface declarations, optional properties, readonly, and class implements"),
+    ("Functions","typescript-functions","intermediate","Function types, optional params, default values, and overloads"),
+    ("Generics","typescript-generics","intermediate","Generic functions, generic classes, and constraints"),
+    ("Modules","typescript-modules","intermediate","ES modules, namespaces, declaration files, and module resolution"),
+    ("React","typescript-react","advanced","TypeScript in React: JSX, props, state, hooks, and component types"),
+]
+
+all = {}
+for name, slug, color, icon, topics in [
+    ("C++","cpp","#00599C","code",cpp),
+    ("C#","csharp","#239120","code",csharp),
+    ("PHP","php","#777BB4","server",php),
+    ("TypeScript","typescript","#3178C6","file-code",ts),
+]:
+    all[slug] = build(name, color, icon, topics)
+
+with open("content_data/lang_content.json","w") as f:
+    json.dump(all, f, indent=2)
+print(f"Generated {len(all)} language categories")
+for slug, data in all.items():
+    print(f"  {slug}: {len(data['topics'])} topics, {len(data['lessons'])} lessons")
